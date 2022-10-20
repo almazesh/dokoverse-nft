@@ -1,0 +1,57 @@
+.container {
+  background: #250841;
+
+  .root {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .mainLogo {
+        width: 168px;
+        height: 168px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .navigation {
+
+      .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        li{
+          font-family: Doko;
+          font-size: 24px;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+
+    .contacts{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .connect{
+      color: white;
+      font-family: Doko;
+      font-size: 24px;
+    }
+  }
+}
