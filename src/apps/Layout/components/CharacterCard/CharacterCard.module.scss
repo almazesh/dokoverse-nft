@@ -1,0 +1,70 @@
+.root{
+  width: 275px;
+  height: 369px;
+  border-radius: 0 15px 0 15px;
+  background: linear-gradient(120deg, rgba(41, 23, 111, 1) 10%, rgba(37, 8, 65, 1) 50%, rgba(41, 23, 111, 1) 85%);
+
+  .container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .profileImg{
+      width: 215px;
+      height: 213px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .aboutObj {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      gap: 15px;
+
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+
+        .key {
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        .value {
+          font-family: Doko;
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+
+      .year {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 55px;
+
+        .key {
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        .value {
+          font-size: 30px;
+          font-family: 'Just Me Again Down Here', cursive;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+
+
+  }
+}

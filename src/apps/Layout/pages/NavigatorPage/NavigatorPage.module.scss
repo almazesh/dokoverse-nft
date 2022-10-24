@@ -1,0 +1,31 @@
+.root {
+
+  .navigationContainer {
+    width: 80%;
+    margin: 100px auto;
+
+    .navigationList {
+      display: flex;
+      justify-content: space-between;
+
+
+      a {
+        text-align: center;
+        width: 320px;
+        cursor: pointer;
+        padding: 25px;
+        border: 5px solid #4B0096;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &.active {
+          background: #4B0096;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
