@@ -2,7 +2,8 @@ import React from 'react'
 import cls from './Team.module.scss'
 import teamBanner from '../../../../../assets/images/teamPeople.png'
 import personProfile from '../../../../../assets/images/teamPersonProfile.png'
-import TeamPersonCard from "../../../components/TeamPersonCard";
+import TeamPersonCard from "../../../components/TeamPersonCard"
+import teamBg from '../../../../../assets/images/teamBg.png'
 
 const teamList = [
   {
@@ -57,27 +58,35 @@ const teamList = [
 
 const Team = () => {
   return (
-    <div className={cls.root}>
-      <section className={cls.teamBanner}>
-        <img src={teamBanner} alt="team banner"/>
-      </section>
-      <section className={cls.teamList}>
-        <div className={cls.teamListContainer}>
-          <ul className={cls.list}>
-            {
-              teamList.map(person => (
-                <TeamPersonCard
-                  key={person.id}
-                  profileImg={person.profileImg}
-                  about={person.about}
-                  nickname={person.nickname}
-                />
-              ))
-            }
-          </ul>
-        </div>
-      </section>
-    </div>
+    <>
+      <img
+        src={teamBg}
+        alt="team bg"
+        className={cls.teamBg}
+      />
+      <div className={cls.root}>
+        <section className={cls.teamBanner}>
+          <img src={teamBanner} alt="team banner"/>
+        </section>
+        <section className={cls.teamList}>
+          <div className={cls.teamListContainer}>
+            <ul className={cls.list}>
+              {
+                teamList.map(person => (
+                  <TeamPersonCard
+                    key={person.id}
+                    profileImg={person.profileImg}
+                    about={person.about}
+                    nickname={person.nickname}
+                  />
+                ))
+              }
+            </ul>
+          </div>
+        </section>
+      </div>
+
+    </>
   )
 }
 
