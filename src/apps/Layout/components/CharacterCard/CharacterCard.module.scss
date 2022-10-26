@@ -4,15 +4,29 @@
   border-radius: 0 15px 0 15px;
   background: linear-gradient(120deg, rgba(41, 23, 111, 1) 10%, rgba(37, 8, 65, 1) 50%, rgba(41, 23, 111, 1) 85%);
 
+  @media (max-width: 450px) {
+    width: 186px;
+    height: 249px;
+  }
+
   .container{
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
+    @media (max-width: 450px) {
+      gap: 20px;
+    }
+
     .profileImg{
       width: 215px;
       height: 213px;
+
+      @media (max-width: 450px) {
+        width: 125px;
+        height: 145px;
+      }
 
       img{
         width: 100%;
@@ -27,21 +41,38 @@
       color: white;
       gap: 15px;
 
+      @media (max-width: 450px) {
+        gap: 10px;
+      }
+
       .location {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 30px;
 
+        @media (max-width: 450px) {
+          gap: 20px;
+        }
+
         .key {
           font-size: 15px;
           font-weight: 500;
+
+          @media (max-width: 450px) {
+            font-size: 10px;
+          }
         }
 
         .value {
           font-family: Doko;
           font-size: 15px;
           text-transform: uppercase;
+
+          @media (max-width: 450px) {
+            font-size: 10px;
+            white-space: nowrap;
+          }
         }
       }
 
@@ -54,12 +85,20 @@
         .key {
           font-size: 15px;
           font-weight: 500;
+
+          @media (max-width: 450px) {
+            font-size: 10px;
+          }
         }
 
         .value {
           font-size: 30px;
           font-family: 'Just Me Again Down Here', cursive;
           letter-spacing: 4px;
+
+          @media (max-width: 450px) {
+            font-size: 15px;
+          }
         }
       }
     }

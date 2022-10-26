@@ -5,7 +5,7 @@ import personProfile from '../../../../../assets/images/teamPersonProfile.png'
 import TeamPersonCard from "../../../components/TeamPersonCard"
 import teamBg from '../../../../../assets/images/teamBg.png'
 
-const teamList = [
+const teamList =  [
   {
     id: 0,
     nickname: '@doko_twi',
@@ -84,6 +84,10 @@ const Team = () => {
             </ul>
           </div>
         </section>
+        <span className={cls.next}>
+          <span>NEXT</span>
+          <pre>-></pre>
+        </span>
       </div>
 
     </>

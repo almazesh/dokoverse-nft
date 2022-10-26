@@ -24,12 +24,6 @@ const charactersList = [
     image: characterImg
   },
   {
-    id: 2,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
     id: 3,
     location: 'Neo-Seoul',
     year: '2111',
@@ -53,15 +47,21 @@ const charactersList = [
     year: '2111',
     image: characterImg
   },
+  {
+    id: 7,
+    location: 'Neo-Seoul',
+    year: '2111',
+    image: characterImg
+  },
 ]
 
-const Characters = () => {
+const Characters = ({isMobile}) => {
   return (
     <>
       <img
         src={bg}
         alt="characters bg"
-        className={cls.charactersBg}
+        className={`${cls.charactersBg} ${isMobile ? cls.mobile : ''}`}
       />
       <div className={cls.root}>
         <div className={cls.moreCharacter}>

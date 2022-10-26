@@ -7,13 +7,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(37, 8, 65, 0.6);
+    background: rgba(38, 2, 73, 0.8);
     z-index: -1;
   }
 
   .navigationContainer {
     width: 90%;
     margin: 100px auto;
+
+    @media (max-width: 450px) {
+      display: none;
+    }
 
     .navigationList {
       display: flex;
@@ -34,6 +38,12 @@
         text-transform: uppercase;
         transition: .3s;
 
+        @media (max-width: 1025px) {
+          width: 220px;
+          padding: 17px 0;
+          font-size: 18px;
+        }
+
         &:hover{
           background: #4B0096;
         }
@@ -43,6 +53,34 @@
         }
       }
     }
+  }
+
+  section{
+
+    .heading{
+      margin: 50px auto;
+      border-radius: 5px;
+      text-align: center;
+      width: 320px;
+      cursor: pointer;
+      padding: 25px;
+      font-size: 25px;
+      font-weight: 600;
+      color: white;
+      background: #4B0096;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .3s;
+    }
+  }
+
+  .manifesto{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .characters{
+    width: 100%;
   }
 }
 

@@ -3,6 +3,7 @@
   height: 100%;
   z-index: 10;
 
+
   .manifestoContainer {
   }
 }
@@ -15,6 +16,10 @@
   height: 130vh;
   z-index: -1;
   object-fit: cover;
+
+  //&.mobile{
+  //  position: absolute;
+  //}
 }
 
 

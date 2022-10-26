@@ -1,46 +1,8 @@
 import React from 'react'
 import cls from './Partners.module.scss'
-import partnerLogo from '../../../../../assets/images/partnersLogo2.png'
-import partnersBg from "../../../../../assets/images/partnersBg.png";
+import partnersBg from "../../../../../assets/images/partnersBg.png"
+import {partnersList} from "../../../../../utils/partnersList"
 
-const partnersList = [
-  {
-    id: 0,
-    image: partnerLogo
-  },
-  {
-    id: 1,
-    image: partnerLogo
-  },
-  {
-    id: 2,
-    image: partnerLogo
-  },
-  {
-    id: 3,
-    image: partnerLogo
-  },
-  {
-    id: 4,
-    image: partnerLogo
-  },
-  {
-    id: 5,
-    image: partnerLogo
-  },
-  {
-    id: 6,
-    image: partnerLogo
-  },
-  {
-    id: 7,
-    image: partnerLogo
-  },
-  {
-    id: 8,
-    image: partnerLogo
-  },
-]
 
 const Partners = () => {
   return (
@@ -53,7 +15,8 @@ const Partners = () => {
       <div className={cls.root}>
         <div className={cls.description}>
           <p>
-            Doko (도코) is a South Korean singer, songwriter, composer and producer of C9 Entertainment.He is a member of the mixed duo Poetic Narrator.
+            Doko (도코) is a South Korean singer, songwriter, composer and producer of C9 Entertainment.He is a member of
+            the mixed duo Poetic Narrator.
           </p>
         </div>
         <div className={cls.partners}>
@@ -69,6 +32,10 @@ const Partners = () => {
             </ul>
           </div>
         </div>
+        <span className={cls.next}>
+          <span>NEXT</span>
+          <pre>-></pre>
+        </span>
       </div>
 
     </>
