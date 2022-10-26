@@ -10,6 +10,7 @@
     width: 95%;
     margin: 0 auto;
     display: flex;
+    height: 100px;
     align-items: center;
     justify-content: space-between;
 
@@ -22,8 +23,12 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 50px;
+      gap: 25px;
       cursor: pointer;
+
+      svg{
+        width: 120px;
+      }
 
       @media (max-width: 1025px) {
         gap: 10px;
@@ -42,8 +47,7 @@
 
 
       .mainLogo {
-        width: 168px;
-        height: 168px;
+        width: 100px;
 
         @media (max-width: 1025px) {
           width: 90px;
@@ -72,22 +76,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 50px;
+        gap: 60px;
 
         @media (max-width: 1025px) {
-          gap: 10px;
+          gap: 15px;
         }
 
         li {
           font-family: Doko;
-          font-size: 24px;
+          font-size: 20px;
           text-transform: uppercase;
           color: white;
           cursor: pointer;
 
           @media (max-width: 1025px) {
             font-size: 14px;
-            letter-spacing: 2px;
           }
         }
       }

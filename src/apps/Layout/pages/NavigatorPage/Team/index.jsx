@@ -59,11 +59,6 @@ const teamList =  [
 const Team = () => {
   return (
     <>
-      <img
-        src={teamBg}
-        alt="team bg"
-        className={cls.teamBg}
-      />
       <div className={cls.root}>
         <section className={cls.teamBanner}>
           <img src={teamBanner} alt="team banner"/>
