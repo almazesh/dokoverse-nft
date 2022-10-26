@@ -1,31 +1,96 @@
-.root{
+.root {
   width: 100%;
+  position: relative;
 
-  .teamBanner{
+  @media (max-width: 450px) {
+    padding-bottom: 130px;
+  }
+
+  .teamBanner {
     margin: 0 auto 165px auto;
     width: 95%;
     height: 735px;
 
-    img{
+    @media (max-width: 1025px) {
+      height: 394px;
+      margin: 0 auto 100px auto;
+    }
+
+    @media (max-width: 450px) {
+      width: 90%;
+      height: 283px;
+      margin: 0 auto 50px auto;
+
+    }
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  .teamList{
+  .teamList {
     width: 95%;
     margin: 0 auto;
 
-    .teamListContainer{
+    .teamListContainer {
 
-      .list{
+      .list {
         display: flex;
         flex-wrap: wrap;
         gap: 150px;
+        justify-content: center;
+
+        @media (max-width: 1025px) {
+          gap: 100px;
+        }
+
+        @media (max-width: 450px) {
+          row-gap: 30px;
+        }
       }
     }
   }
+
+  .next {
+    position: absolute;
+    font-size: 35px;
+    font-family: Doko;
+    right: 3rem;
+    bottom: 5rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    @media (max-width: 450px) {
+      right: 50%;
+      transform: translateX(55%);
+      font-size: 25px;
+    }
+
+    span {
+      letter-spacing: 10px;
+    }
+
+    pre {
+      letter-spacing: 15px;
+    }
+  }
+
+}
+
+.teamBg {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
 

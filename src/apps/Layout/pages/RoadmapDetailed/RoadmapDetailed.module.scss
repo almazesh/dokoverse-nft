@@ -1,0 +1,97 @@
+.root {
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-bottom: 70px;
+
+  &:after{
+    position: fixed;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #29044C;
+    z-index: -1;
+  }
+
+  .closeModal {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    font-size: 90px;
+    cursor: pointer;
+    font-weight: 100;
+
+    @media (max-width: 450px) {
+      font-size: 60px;
+      top: .5rem;
+      font-weight: 300;
+    }
+  }
+
+  .heading {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 78.02px;
+
+    @media (max-width: 1025px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 30px;
+      padding: 50px 0 30px 0;
+    }
+  }
+
+  .modalContainer {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    background: #21053b;
+    padding: 50px 100px;
+
+    @media (max-width: 450px) {
+      padding: 30px;
+    }
+
+    .modalWrapper {
+      width: 100%;
+
+      p {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36.57px;
+
+        @media (max-width: 1025px) {
+          font-size: 18px;
+          line-height: 21.94px;
+        }
+
+        @media (max-width: 450px) {
+          font-size: 15px;
+          line-height: 18.29px;
+          font-weight: 300;
+        }
+      }
+
+      h3{
+        font-size: 40px;
+        font-weight: 500;
+        padding-bottom: 50px;
+
+        @media (max-width: 1025px) {
+          font-size: 30px;
+        }
+
+        @media (max-width: 450px) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

@@ -17,8 +17,9 @@ const Main = () => {
         muted
         autoPlay
       />
+      <span className={`${cls.mention} ${isMinting ? cls.disable : ''}`}>watch the full video</span>
       <div className={`${cls.mainWrapper} ${isMinting ? cls.active : ''}`}>
-        <div className={cls.main}>
+        <div className={`${cls.main} ${isMinting ? cls.disable : ''}`}>
           <Logo/>
           <button
             onClick={() => setIsMinting(true)}
@@ -43,7 +44,7 @@ const Main = () => {
               </button>
 
               {
-                isConnected ? <span>0sxkdkfdkf39u42340234u230489</span> : ''
+                isConnected ? <span className={cls.hash}>0sxkdkfdkf39u42340234u230489</span> : ''
               }
             </div>
 

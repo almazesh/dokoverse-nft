@@ -2,7 +2,7 @@ export const navigation = [
   {
     key: 0,
     title: 'Dokostory',
-  path: '/dokostory'
+    path: '/dokostory'
   },
   {
     key: 1,
