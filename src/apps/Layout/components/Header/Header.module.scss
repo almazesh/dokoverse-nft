@@ -124,5 +124,13 @@
         display: none;
       }
     }
+
+    .dropdown{
+      display: none;
+
+      @media (max-width: 450px) {
+        display: block;
+      }
+    }
   }
 }

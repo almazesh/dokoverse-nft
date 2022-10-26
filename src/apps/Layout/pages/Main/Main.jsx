@@ -6,8 +6,8 @@ import {ReactComponent as MinusIcon} from "../../../../assets/images/minusIcon.s
 import {ReactComponent as PlusIcon} from "../../../../assets/images/plusIcon.svg"
 
 const Main = () => {
-  const [isMinting, setIsMinting] = useState(false);
-  const [isConnected, setIsConnected] = useState(false);
+  const [isMinting, setIsMinting] = useState(false)
+  const [isConnected, setIsConnected] = useState(false)
 
   return (
     <div className={cls.root}>
@@ -96,7 +96,7 @@ const Main = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

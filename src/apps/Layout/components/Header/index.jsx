@@ -7,7 +7,7 @@ import {ReactComponent as WebIcon} from "../../../../assets/images/web.svg"
 import {navigation} from "../../../../utils/navigation"
 import {useNavigate} from "react-router"
 import {ReactComponent as DropdownIcon} from "../../../../assets/images/dropdownIcon.svg"
-import Dropdown from "../Dropdown";
+import Dropdown from "../Dropdown"
 
 
 const Header = () => {
@@ -43,9 +43,6 @@ const Header = () => {
           <div className={cls.contacts}>
             <ShareIcon/>
             <WebIcon/>
-          </div>
-          <div className={cls.connect}>
-            CONNECT
           </div>
           <div className={cls.dropdown}>
             <DropdownIcon/>

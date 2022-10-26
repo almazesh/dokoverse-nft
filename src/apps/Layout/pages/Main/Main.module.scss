@@ -31,13 +31,13 @@
   }
 
   &::after {
-    position: fixed;
+    position: absolute;
     content: '';
     width: 100%;
     height: 100%;
     left: 0;
     bottom: -165px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
 
     @media (max-width: 1025px) {
@@ -47,11 +47,12 @@
     @media (max-width: 450px) {
       top: 0;
       height: 115%;
+      position: fixed;
     }
   }
 
   video {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -60,7 +61,7 @@
 
     @media (max-width: 450px) {
       top: 0;
-      //height: 100%;
+      position: fixed;
     }
   }
 
