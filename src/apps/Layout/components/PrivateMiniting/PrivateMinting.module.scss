@@ -4,7 +4,7 @@
   justify-content: flex-start;
   display: none;
 
-  &.active{
+  &.active {
     display: flex;
   }
 
@@ -59,7 +59,7 @@
         flex-direction: column;
       }
 
-      .hash{
+      .hash {
 
         @media (max-width: 450px) {
           width: 75%;
@@ -215,7 +215,7 @@
     }
 
     @media (max-width: 450px) {
-      height: 380px;
+      height: 350px;
     }
 
     .controllingWrapper {
@@ -288,10 +288,13 @@
             color: white;
             padding-bottom: 45px;
             display: flex;
+            width: 300px;
+            justify-content: space-between;
             align-items: center;
 
             @media (max-width: 1025px) {
               padding-bottom: 20px;
+              width: 250px;
             }
 
             span {
@@ -313,7 +316,6 @@
               }
 
               &:nth-child(2) {
-                padding-right: 30px;
 
                 @media (max-width: 1025px) {
                   font-weight: 600;
@@ -336,14 +338,20 @@
             color: white;
             display: flex;
             align-items: center;
+            width: 300px;
+            justify-content: space-between;
             gap: 60px;
 
+            @media (max-width: 1025px) {
+              width: 250px;
+            }
+
             span {
-              font-size: 22px;
-              font-weight: 400;
+              font-size: 22px !important;
+              font-weight: 400 !important;
 
               @media (max-width: 1025px) {
-                font-size: 16px;
+                font-size: 16px !important;
                 font-weight: 400;
               }
             }
@@ -357,18 +365,23 @@
               svg {
                 cursor: pointer;
 
+                &.disabled {
+                  opacity: 0.5;
+                  pointer-events: none;
+                }
+
                 @media (max-width: 1025px) {
                   width: 15px;
                 }
-                }
               }
+            }
 
-              span {
-                font-size: 26px;
-                font-weight: 600;
+            span {
+              font-size: 26px;
+              font-weight: 600;
 
-                @media (max-width: 1025px) {
-                  font-size: 16px;
+              @media (max-width: 1025px) {
+                font-size: 16px;
               }
             }
           }

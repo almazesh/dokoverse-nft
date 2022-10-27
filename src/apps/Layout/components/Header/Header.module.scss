@@ -26,7 +26,7 @@
       gap: 25px;
       cursor: pointer;
 
-      svg{
+      svg {
         width: 120px;
       }
 
@@ -34,13 +34,13 @@
         gap: 10px;
 
         svg {
-          width: 150px;
+          width: 120px;
         }
       }
 
       @media (max-width: 450px) {
 
-        svg{
+        svg {
           width: 120px;
         }
       }
@@ -50,13 +50,13 @@
         width: 100px;
 
         @media (max-width: 1025px) {
-          width: 90px;
-          height: 90px;
+          width: 80px;
+          height: 80px;
         }
 
         @media (max-width: 450px) {
           width: 70px;
-          height: 70px  ;
+          height: 70px;
         }
 
         img {
@@ -79,7 +79,7 @@
         gap: 60px;
 
         @media (max-width: 1025px) {
-          gap: 15px;
+          gap: 25px;
         }
 
         li {
@@ -90,7 +90,7 @@
           cursor: pointer;
 
           @media (max-width: 1025px) {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
@@ -99,18 +99,25 @@
     .contacts {
       display: flex;
       align-items: center;
-      gap: 20px;
-
-      @media (max-width: 1025px) {
-        gap: 10px;
-      }
+      gap: 25px;
 
       @media (max-width: 450px) {
         display: none;
       }
 
-      svg{
+      svg {
         width: 20px;
+        cursor: pointer;
+      }
+
+      .share {
+        position: relative;
+
+      }
+
+      .lang {
+        position: relative;
+
       }
     }
 
@@ -128,7 +135,7 @@
       }
     }
 
-    .dropdown{
+    .dropdown {
       display: none;
 
       @media (max-width: 450px) {

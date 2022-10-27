@@ -289,10 +289,13 @@
             color: white;
             padding-bottom: 45px;
             display: flex;
+            width: 300px;
+            justify-content: space-between;
             align-items: center;
 
             @media (max-width: 1025px) {
               padding-bottom: 20px;
+              width: 250px;
             }
 
             span {
@@ -309,12 +312,12 @@
               }
 
               &:nth-child(1) {
-                padding-right: 40px;
+                //padding-right: 40px;
                 font-weight: 200;
               }
 
               &:nth-child(2) {
-                padding-right: 30px;
+                //padding-right: 30px;
                 font-weight: 600;
 
                 @media (max-width: 1025px) {
@@ -338,11 +341,15 @@
             color: white;
             padding-bottom: 45px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            width: 300px;
 
 
             @media (max-width: 1205px) {
               padding-bottom: 20px;
+              width: 250px;
+
             }
 
             span {
@@ -359,12 +366,12 @@
               }
 
               &:nth-child(1) {
-                padding-right: 40px;
+                //padding-right: 40px;
                 font-weight: 200;
               }
 
               &:nth-child(2) {
-                padding-right: 30px;
+                //padding-right: 30px;
 
                 @media (max-width: 1025px) {
                   font-weight: 600;
@@ -385,6 +392,12 @@
             display: flex;
             align-items: center;
             gap: 60px;
+            width: 300px;
+            justify-content: space-between;
+
+            @media (max-width: 1025px) {
+              width: 250px;
+            }
 
             span {
               font-size: 22px;
@@ -404,6 +417,12 @@
 
               svg {
                 cursor: pointer;
+
+                &.disabled{
+                  opacity: 0.5;
+                  pointer-events: none;
+                }
+
 
                 @media (max-width: 1025px) {
                   width: 15px;

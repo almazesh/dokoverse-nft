@@ -42,21 +42,22 @@
       li {
         border-radius: 5px;
         text-align: center;
-        width: 320px;
+        width: 280px;
         cursor: pointer;
-        padding: 25px;
-        border: 5px solid #4B0096;
-        font-size: 25px;
-        font-weight: 600;
+        padding: 15px 0;
+        border: 3px solid #4B0096;
+        font-size: 20px;
+        font-weight: 500;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
         transition: .3s;
 
         @media (max-width: 1025px) {
-          width: 220px;
-          padding: 17px 0;
-          font-size: 18px;
+          width: 200px;
+          border: 2px solid #4B0096;
+          padding: 12px 0;
+          font-size: 15px;
         }
 
         &:hover {

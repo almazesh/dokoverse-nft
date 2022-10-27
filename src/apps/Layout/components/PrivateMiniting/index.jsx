@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import cls from "./PrivateMinting.module.scss"
 import {ReactComponent as MinusIcon} from "../../../../assets/images/minusIcon.svg";
 import {ReactComponent as PlusIcon} from "../../../../assets/images/plusIcon.svg";
@@ -10,6 +10,23 @@ const PrivateMinting = (
     isConnected
   }
 ) => {
+  const [counter, setCounter] = useState(0)
+
+  const counterHandler = (sign) => {
+    if (sign === '-') {
+
+      if (counter !== 0) {
+        setCounter(prev => --prev)
+      }
+    } else {
+
+      if (counter < 5) {
+        setCounter(prev => ++prev)
+      }
+
+    }
+  }
+
   return (
     <div className={`${cls.statistics} ${isMinting ? cls.active : ''}`}>
       <div className={cls.heading}>
@@ -62,9 +79,15 @@ const PrivateMinting = (
               <div className={cls.incrementAndDecrement}>
                 <span>Amount</span>
                 <div>
-                  <MinusIcon/>
-                  <span>3</span>
-                  <PlusIcon/>
+                  <MinusIcon
+                    onClick={() => counterHandler('-')}
+                    className={`${counter === 0 ? cls.disabled : ''}`}
+                  />
+                  <span>{counter}</span>
+                  <PlusIcon
+                    onClick={() => counterHandler('+')}
+                    className={`${counter === 5 ? cls.disabled : ''}`}
+                  />
                 </div>
               </div>
             </div>

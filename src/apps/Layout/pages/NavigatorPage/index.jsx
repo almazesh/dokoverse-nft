@@ -1,12 +1,10 @@
 import React, {useState} from 'react'
 import cls from './NavigatorPage.module.scss'
-import {Outlet} from "react-router"
-import {Link} from "react-router-dom";
 import Characters from "./Characters";
 import Manifesto from "./Manifesto";
 import Team from "./Team";
-import Partners from "./Partners";
-import VideoBg from "../../../../assets/videos/dokoverse.mp4";
+import Partners from "./Partners"
+import VideoBg from "../../../../assets/videos/dokoverse.mp4"
 
 const navigations = [
   {
