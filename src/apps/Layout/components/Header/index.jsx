@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import cls from './Header.module.scss'
 import Logo from '../../../../assets/images/dokoLog.png'
 import {ReactComponent as TextLogo} from "../../../../assets/images/textLogo.svg"
@@ -7,11 +7,63 @@ import {ReactComponent as WebIcon} from "../../../../assets/images/web.svg"
 import {navigation} from "../../../../utils/navigation"
 import {useNavigate} from "react-router"
 import {ReactComponent as DropdownIcon} from "../../../../assets/images/dropdownIcon.svg"
-import Dropdown from "../Dropdown";
+import {ReactComponent as ShareListIcon1} from "../../../../assets/images/shareListItem1.svg"
+import {ReactComponent as ShareListIcon2} from "../../../../assets/images/shareListItem2.svg"
+import Dropdown from "../Dropdown"
+import LangOrShareDropdown from "../LangOrShareDropdown"
+
+const SharingList = [
+  {
+    id: 0,
+    icon: ShareListIcon1,
+    title: 'opensea'
+  },
+  {
+    id: 1,
+    icon: ShareListIcon2,
+    title: 'opensea'
+  },
+  {
+    id: 2,
+    icon: ShareListIcon1,
+    title: 'opensea'
+  },
+  {
+    id: 3,
+    icon: ShareListIcon2,
+    title: 'opensea'
+  },
+]
+
+const LangList = [
+  {
+    id: 0,
+    icon: ShareListIcon2,
+    title: 'en'
+  },
+  {
+    id: 1,
+    icon: ShareListIcon2,
+    title: 'ko'
+  },
+  {
+    id: 2,
+    icon: ShareListIcon2,
+    title: 'fr'
+  },
+  {
+    id: 3,
+    icon: ShareListIcon2,
+    title: 'es'
+  },
+]
 
 
 const Header = () => {
   const navigate = useNavigate()
+  const [isActiveShare, setIsActiveShare] = useState(false)
+  const [isActiveLang, setIsActiveLang] = useState(false)
+  const [isActiveDropdown, setIsActiveDropdown] = useState(false);
 
   return (
     <>
@@ -41,18 +93,48 @@ const Header = () => {
             </ul>
           </div>
           <div className={cls.contacts}>
-            <ShareIcon/>
-            <WebIcon/>
-          </div>
-          <div className={cls.connect}>
-            CONNECT
+            <div className={cls.share}>
+              <ShareIcon
+                onClick={() => {
+                  setIsActiveShare(prev => !prev)
+                  setIsActiveLang(() => false)
+                }}
+              />
+              <LangOrShareDropdown
+                list={SharingList}
+                isActive={isActiveShare}
+              />
+            </div>
+            <div className={cls.lang}>
+              <WebIcon
+                onClick={() => {
+                  setIsActiveLang(prev => !prev)
+                  setIsActiveShare(() => false)
+                }}
+              />
+              <LangOrShareDropdown
+                isActive={isActiveLang}
+                list={LangList}
+              />
+            </div>
           </div>
           <div className={cls.dropdown}>
-            <DropdownIcon/>
+            <DropdownIcon
+              onClick={() => setIsActiveDropdown(prev => !prev)}
+            />
           </div>
         </div>
       </div>
-      <Dropdown/>
+      <div
+      >
+        <Dropdown
+          isActive={isActiveDropdown}
+          setIsActive={setIsActiveDropdown}
+          navigationList={navigation}
+          shareList={SharingList}
+          langList={LangList}
+        />
+      </div>
     </>
   );
 };

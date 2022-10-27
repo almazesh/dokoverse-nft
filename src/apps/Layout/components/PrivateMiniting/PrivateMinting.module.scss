@@ -1,0 +1,436 @@
+.statistics {
+  width: 60%;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  @media (max-width: 1025px) {
+    width: 100%;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .heading {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    justify-content: space-between;
+
+    @media (max-width: 1025px) {
+      gap: 0;
+    }
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 15px;
+    }
+
+    h3 {
+      font-size: 40px;
+      color: white;
+      font-weight: 600;
+
+      @media (max-width: 1025px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 450px) {
+        font-size: 40px;
+
+      }
+    }
+
+    div {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      @media (max-width: 450px) {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .hash {
+
+        @media (max-width: 450px) {
+          width: 75%;
+          text-align: center;
+          font-size: 13px;
+          line-height: 15.85px;
+          font-weight: 300;
+          letter-spacing: 1.3px;
+        }
+      }
+
+      button {
+        padding: 20px 25px;
+        background: #0009D9;
+        font-size: 20px;
+        border-radius: 11px;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        font-weight: 100;
+
+        @media (max-width: 1025px) {
+          padding: 20px;
+          font-size: 15px;
+        }
+
+        @media (max-width: 450px) {
+          width: 75%;
+          margin: 0 auto;
+          font-size: 18px;
+        }
+
+        &.connected {
+          background: #250841;
+        }
+
+      }
+
+      span {
+        background: #250841;
+        color: white;
+        font-size: 20px;
+        border-radius: 11px;
+        line-height: 24.38px;
+        padding: 20px 25px;
+
+        @media (max-width: 1025px) {
+        }
+      }
+    }
+  }
+
+  .walletType {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+    @media (max-width: 450px) {
+      margin: 30px 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .count {
+      background: #250841;
+      height: 127px;
+      border-radius: 11px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media (max-width: 1025px) {
+        padding: 20px;
+      }
+
+      div {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+
+        span {
+          font-size: 20px;
+          font-weight: 300;
+
+          @media (max-width: 1025px) {
+            font-size: 15px;
+          }
+        }
+
+        &:nth-child(1) {
+          padding-bottom: 19px;
+        }
+      }
+    }
+
+    .navigating {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 1025px) {
+        gap: 10px;
+      }
+
+      @media (max-width: 450px) {
+        gap: 0;
+        justify-content: space-between;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+        height: 127px;
+        font-weight: 300;
+        background: #250841;
+        border-radius: 11px;
+        cursor: pointer;
+        font-size: 20px;
+
+        @media (max-width: 1025px) {
+          padding: 0 20px;
+          font-size: 15px;
+        }
+
+        @media (max-width: 450px) {
+          width: 162px;
+          height: 76px;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .controlling {
+    background: rgba(37, 8, 65, 0.7);
+    height: 500px;
+    border-radius: 11px;
+
+    @media (max-width: 1025px) {
+      height: 410px;
+      background: rgb(37, 8, 65);
+      background: linear-gradient(243deg, rgba(37, 8, 65, 1) 57%, rgba(41, 23, 111, 1) 100%);
+    }
+
+    @media (max-width: 450px) {
+      height: 350px;
+    }
+
+    .controllingWrapper {
+      width: 60%;
+      height: 80%;
+      margin: 5rem auto 0 auto;
+
+      @media (max-width: 1025px) {
+        margin: 3rem auto 0 auto;
+        width: 80%;
+      }
+
+      @media (max-width: 450px) {
+        margin: 30px auto;
+        width: 80%;
+      }
+
+      .walletData {
+
+
+        .title {
+          font-size: 28px;
+          font-weight: 400;
+          color: white;
+          margin-bottom: 20px;
+
+          @media (max-width: 1025px) {
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+
+        .mintingData {
+          position: relative;
+          padding: 20px 0 0 50px;
+          margin-bottom: 45px;
+
+          @media (max-width: 1025px) {
+            padding: 20px 0 0 30px;
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: white;
+          }
+
+          h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58.51px;
+            color: white;
+            padding-bottom: 50px;
+
+            @media (max-width: 1025px) {
+              font-size: 25px;
+              padding-bottom: 40px;
+            }
+
+            @media (max-width: 450px) {
+              font-size: 23px;
+              padding-bottom: 20px;
+            }
+          }
+
+          .max {
+            color: white;
+            padding-bottom: 45px;
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 1025px) {
+              padding-bottom: 20px;
+              width: 250px;
+            }
+
+            span {
+              font-size: 22px;
+              font-weight: 600;
+
+              @media (max-width: 1025px) {
+                font-size: 16px;
+                font-weight: 400;
+              }
+
+              @media (max-width: 450px) {
+                font-weight: 600;
+              }
+
+              &:nth-child(1) {
+                padding-right: 40px;
+                font-weight: 400;
+              }
+
+              &:nth-child(2) {
+
+                @media (max-width: 1025px) {
+                  font-weight: 600;
+                  font-size: 16px;
+                }
+              }
+
+              &:nth-child(3) {
+
+                @media (max-width: 1025px) {
+                  font-weight: 600;
+                  font-size: 16px;
+                }
+              }
+
+            }
+          }
+
+          .incrementAndDecrement {
+            color: white;
+            display: flex;
+            align-items: center;
+            width: 300px;
+            justify-content: space-between;
+            gap: 60px;
+
+            @media (max-width: 1025px) {
+              width: 250px;
+            }
+
+            span {
+              font-size: 22px !important;
+              font-weight: 400 !important;
+
+              @media (max-width: 1025px) {
+                font-size: 16px !important;
+                font-weight: 400;
+              }
+            }
+
+            div {
+              display: flex;
+              align-items: center;
+              gap: 30px;
+
+
+              svg {
+                cursor: pointer;
+
+                &.disabled {
+                  opacity: 0.5;
+                  pointer-events: none;
+                }
+
+                @media (max-width: 1025px) {
+                  width: 15px;
+                }
+              }
+            }
+
+            span {
+              font-size: 26px;
+              font-weight: 600;
+
+              @media (max-width: 1025px) {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .buttonContainer {
+        width: 100%;
+
+        @media (max-width: 1025px) {
+          width: 90%;
+        }
+
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+
+        button {
+          border-radius: 11px;
+          width: 80%;
+          margin-left: 80px;
+          padding: 25px 0;
+          background: #0009D9;
+          border: none;
+          outline: none;
+          color: white;
+          cursor: pointer;
+          font-size: 20px;
+          letter-spacing: 10px;
+          text-transform: uppercase;
+          font-weight: 400;
+          box-shadow: 0 0 10px #0009D9;
+
+          @media (max-width: 1025px) {
+            font-size: 15px;
+            font-weight: 100;
+          }
+
+          @media (max-width: 450px) {
+            width: 100%;
+            margin-left: 0;
+
+          }
+
+          &:disabled {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

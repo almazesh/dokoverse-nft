@@ -58,11 +58,6 @@ const charactersList = [
 const Characters = ({isMobile}) => {
   return (
     <>
-      <img
-        src={bg}
-        alt="characters bg"
-        className={`${cls.charactersBg} ${isMobile ? cls.mobile : ''}`}
-      />
       <div className={cls.root}>
         <div className={cls.moreCharacter}>
           <div className={cls.card}>

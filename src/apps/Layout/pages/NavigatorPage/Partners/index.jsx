@@ -7,11 +7,6 @@ import {partnersList} from "../../../../../utils/partnersList"
 const Partners = () => {
   return (
     <>
-      <img
-        src={partnersBg}
-        alt="team bg"
-        className={cls.partnersBg}
-      />
       <div className={cls.root}>
         <div className={cls.description}>
           <p>

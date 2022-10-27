@@ -1,10 +1,93 @@
-.root{
-  display: none;
+.root {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  height: 100%;
+  min-height: 70%;
   background: #250841;
-  z-index: 10;
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: .2s;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .container {
+    width: 90%;
+    margin: 2rem auto;
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      svg {
+        width: 146px;
+      }
+
+      span {
+        font-size: 50px;
+        font-weight: 100;
+        color: white;
+        line-height: 50px;
+      }
+    }
+
+    .navigationList{
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+
+
+      li{
+        color: white;
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        text-transform: uppercase;
+        font-family: Doko;
+        font-size: 18px;
+
+      }
+    }
+
+    .contacts{
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .lang{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        svg{
+          width: 30px;
+        }
+
+        span{
+          font-family: Doko;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+
+      .social{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span{
+          font-family: Doko;
+          text-transform: uppercase;
+          color: white;
+        }
+
+        svg{
+          width: 28px;
+        }
+      }
+    }
+  }
 }

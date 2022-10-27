@@ -1,6 +1,6 @@
 
 .root {
-  height: 100%;
+  height: 80vh;
   z-index: 10;
 
 
@@ -8,19 +8,6 @@
   }
 }
 
-.manifestoBg {
-  top: 0;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 130vh;
-  z-index: -1;
-  object-fit: cover;
-
-  //&.mobile{
-  //  position: absolute;
-  //}
-}
 
 
 
