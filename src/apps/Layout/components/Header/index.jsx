@@ -38,22 +38,18 @@ const SharingList = [
 const LangList = [
   {
     id: 0,
-    icon: ShareListIcon2,
     title: 'en'
   },
   {
     id: 1,
-    icon: ShareListIcon2,
     title: 'ko'
   },
   {
     id: 2,
-    icon: ShareListIcon2,
     title: 'fr'
   },
   {
     id: 3,
-    icon: ShareListIcon2,
     title: 'es'
   },
 ]
@@ -103,6 +99,8 @@ const Header = () => {
               <LangOrShareDropdown
                 list={SharingList}
                 isActive={isActiveShare}
+                isLanguage={false}
+                setIsActive={setIsActiveShare}
               />
             </div>
             <div className={cls.lang}>
@@ -115,6 +113,8 @@ const Header = () => {
               <LangOrShareDropdown
                 isActive={isActiveLang}
                 list={LangList}
+                isLanguage={true}
+                setIsActive={setIsActiveLang}
               />
             </div>
           </div>

@@ -4,16 +4,42 @@
   height: 553px;
   border-radius: 0 30px;
 
+  @media (max-width: 770px) {
+    width: 314px;
+    height: 480px;
+  }
+
+  @media (max-width: 450px) {
+    width: 80%;
+    height: 430px;
+  }
+
   .container {
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 36px;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: 450px) {
+      padding: 20px;
+    }
 
     .profile {
       width: 232px;
       height: 232px;
+
+      @media (max-width: 770px) {
+        width: 180px;
+        height: 180px;
+      }
+
+      @media (max-width: 450px) {
+        width: 160px;
+        height: 160px;
+      }
 
       img {
         border-radius: 50%;
@@ -34,6 +60,14 @@
         font-size: 26px;
         font-weight: 700;
         text-decoration: underline;
+
+        @media (max-width: 770px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 450px) {
+          font-weight: 600;
+        }
       }
 
       .teamName {
@@ -47,6 +81,14 @@
         text-align: center;
         font-size: 20px;
         line-height: 24.38px;
+
+        @media (max-width: 770px) {
+          font-size: 16px;
+        }
+
+        @media (max-width: 450px) {
+          font-weight: 200;
+        }
       }
     }
   }

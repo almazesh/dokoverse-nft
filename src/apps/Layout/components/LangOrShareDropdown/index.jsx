@@ -4,17 +4,27 @@ import cls from './LangOrShareDropdown.module.scss'
 const LanguageDropdown = (
   {
     isActive,
-    list
+    list,
+    setIsActive,
+    isLanguage
   }
 ) => {
+
   return (
-    <div className={`${cls.root} ${isActive ? cls.active : ''}`}>
+    <div className={
+      `${cls.root} ${isActive ? cls.active : ''} ${isLanguage ? cls.langauge : cls.share}`
+    }>
       <ul className={cls.list}>
         {
           list.map(item => (
-            <li key={item.id}>
+            <li
+              key={item.id}
+              onClick={() => setIsActive(false)}
+            >
               {
-                <item.icon/>
+                item?.icon
+                  ? <item.icon/>
+                  : <span>{item.title}</span>
               }
             </li>
           ))
