@@ -1,8 +1,9 @@
 .statistics {
-  width: 60%;
+  width: 65%;
   flex-direction: column;
   justify-content: flex-start;
   display: none;
+  padding-top: 2rem;
 
   &.active {
     display: flex;
@@ -12,16 +13,15 @@
     width: 100%;
   }
 
-  @media (max-width: 770px) {
-    padding-top: 100px;
-    padding-bottom: 50px;
+  @media (max-width: 450px) {
+    padding-top: 0;
   }
+
 
   .heading {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    gap: 75px;
     justify-content: space-between;
 
     @media (max-width: 1025px) {
@@ -35,7 +35,7 @@
     }
 
     h3 {
-      font-size: 40px;
+      font-size: 30px;
       color: white;
       font-weight: 600;
 
@@ -44,8 +44,7 @@
       }
 
       @media (max-width: 770px) {
-        font-size: 40px;
-
+        font-size: 30px;
       }
     }
 
@@ -60,6 +59,8 @@
       }
 
       .hash {
+        font-size: 16px;
+        padding: 15px 25px;
 
         @media (max-width: 770px) {
           width: 75%;
@@ -72,9 +73,9 @@
       }
 
       button {
-        padding: 20px 25px;
+        padding: 15px 25px;
         background: #0009D9;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 11px;
         border: none;
         outline: none;
@@ -118,8 +119,13 @@
     margin-bottom: 20px;
     width: 100%;
     display: flex;
+    //gap: 15px;
     color: white;
     justify-content: space-between;
+
+    @media (max-width: 1441px) {
+
+    }
 
     @media (max-width: 770px) {
       margin: 30px 0;
@@ -128,10 +134,10 @@
     }
 
     .count {
+      width: 60%;
       background: #250841;
-      height: 127px;
       border-radius: 11px;
-      padding: 30px;
+      padding: 25px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -140,8 +146,14 @@
         padding: 20px;
       }
 
+      @media (max-width: 770px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+
       div {
-        width: 400px;
+        width: 100%;
+        gap: 20px;
         display: flex;
         justify-content: space-between;
 
@@ -150,7 +162,7 @@
         }
 
         span {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 300;
 
           @media (max-width: 1025px) {
@@ -166,11 +178,13 @@
 
     .navigating {
       display: flex;
-      gap: 20px;
+      gap: 10px;
+      width: 35%;
+      justify-content: flex-end;
 
 
       @media (max-width: 1441px) {
-        flex-direction: column;
+        //flex-direction: column;
       }
 
       @media (max-width: 1025px) {
@@ -179,7 +193,8 @@
       }
 
       @media (max-width: 770px) {
-        gap: 0;
+        width: 90%;
+        margin: 0 auto;
         justify-content: space-between;
       }
 
@@ -187,17 +202,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 50px;
-        height: 127px;
+        padding: 0 20px;
+        height: 100%;
         font-weight: 300;
         background: #250841;
         border-radius: 11px;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 16px;
 
-        @media (max-width: 1441px) {
-          height: 60px;
-        }
+
+        //@media (max-width: 1441px) {
+        //  height: 60px;
+        //}
 
 
         @media (max-width: 1025px) {
@@ -216,14 +232,13 @@
   }
 
   .controlling {
-    background: rgba(37, 8, 65, 0.7);
-    height: 500px;
+    background: rgb(37, 8, 65);
+    background: linear-gradient(243deg, rgba(37, 8, 65, 1) 57%, rgba(41, 23, 111, 1) 100%);
+    height: 450px;
     border-radius: 11px;
 
     @media (max-width: 1025px) {
       height: 410px;
-      background: rgb(37, 8, 65);
-      background: linear-gradient(243deg, rgba(37, 8, 65, 1) 57%, rgba(41, 23, 111, 1) 100%);
     }
 
     @media (max-width: 770px) {
@@ -233,15 +248,16 @@
     .controllingWrapper {
       width: 60%;
       height: 80%;
-      margin: 5rem auto 0 auto;
+      margin: 0 auto;
+      padding: 30px 0;
 
       @media (max-width: 1025px) {
-        margin: 3rem auto 0 auto;
+        margin: 2rem auto 0 auto;
         width: 80%;
       }
 
       @media (max-width: 770px) {
-        margin: 30px auto;
+        margin: 0 auto;
         width: 80%;
       }
 

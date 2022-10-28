@@ -1,15 +1,26 @@
 .root{
   width: 100%;
-  background: #000;
+  height: 100%;
+
+  &:after{
+    content: '';
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 120%;
+    background: #000;
+  }
 
   .albumList{
-    width: 95%;
+    width: 90%;
     padding: 140px 0 100px 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 25px;
 
     @media (max-width: 1025px) {
@@ -22,8 +33,17 @@
       gap: 10px;
       align-items: flex-start;
 
+      @media (max-width: 450px) {
+        width: 95%;
+        margin: 0 auto;
+      }
+
       svg{
         margin-top: -2rem;
+
+        @media (max-width: 450px) {
+          width: 50px;
+        }
       }
 
       .image{
@@ -32,6 +52,10 @@
 
         @media (max-width: 1025px) {
           height: 200px;
+        }
+
+        @media (max-width: 450px) {
+          width: 309px;
         }
 
         img{

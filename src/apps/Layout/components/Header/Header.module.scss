@@ -1,15 +1,12 @@
-.header {
-  background: #250841;
 
-  .container {
-    width: 1440px;
-    margin: auto;
-  }
+
+
+.background{
+  background: #29044C;
 
   @media (max-width: 450px) {
     background: transparent;
   }
-
 
   .root {
     width: 95%;
@@ -133,5 +130,6 @@
         display: block;
       }
     }
+
   }
 }

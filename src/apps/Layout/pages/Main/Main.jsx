@@ -8,7 +8,8 @@ import PublicMinting from "../../components/PublicMinting";
 const Main = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [isConnected, setIsConnected] = useState(false)
-  const [isPublic, setIsPublic] = useState(true)
+  const [isPublic, setIsPublic] = useState(false)
+
 
   return (
     <div className={cls.root}>
@@ -19,8 +20,8 @@ const Main = () => {
         autoPlay
       />
       <span className={`${cls.mention} ${isMinting ? cls.disable : ''}`}>watch the full video</span>
-      
-      <div className={cls.container}>
+
+      <div className="container">
         <div className={`${cls.mainWrapper} ${isMinting ? cls.active : ''}`}>
           <div className={`${cls.main} ${isMinting ? cls.disable : ''}`}>
             <Logo/>
@@ -32,7 +33,7 @@ const Main = () => {
           </div>
 
           {
-            isPublic ? (
+            !isPublic ? (
               <PrivateMinting
                 isMinting={isMinting}
                 setIsConnected={setIsConnected}
