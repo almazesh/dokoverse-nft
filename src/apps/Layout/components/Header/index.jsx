@@ -12,6 +12,7 @@ import Dropdown from "../Dropdown"
 import LangOrShareDropdown from "../LangOrShareDropdown"
 
 import cls from './Header.module.scss'
+
 const SharingList = [
   {
     id: 0,
@@ -63,74 +64,73 @@ const Header = () => {
 
   return (
     <>
-      <div className={cls.header}>
-        <div className={cls.container}>
-          <div className={cls.root}>
-            <div
-              className={cls.logo}
-              onClick={() => navigate('/')}
-            >
-              <div className={cls.mainLogo}>
-                <img src={Logo} alt="logo"/>
-              </div>
-              <div>
-                <TextLogo/>
-              </div>
+    <div className={cls.background}>
+      <div className="container">
+        <div className={cls.root}>
+          <div
+            className={cls.logo}
+            onClick={() => navigate('/')}
+          >
+            <div className={cls.mainLogo}>
+              <img src={Logo} alt="logo"/>
             </div>
-            <div className={cls.navigation}>
-              <ul className={cls.list}>
-                {
-                  navigation.map(item => (
-                    <li
-                      key={item.key}
-                      onClick={() => navigate(item.path)}
-                    >{item.title}</li>
-                  ))
-                }
-              </ul>
+            <div>
+              <TextLogo/>
             </div>
-            <div className={cls.contacts}>
-              <div className={cls.share}>
-                <ShareIcon
-                  onClick={() => {
-                    setIsActiveShare(prev => !prev)
-                    setIsActiveLang(() => false)
-                  }}
-                />
-                <LangOrShareDropdown
-                  list={SharingList}
-                  isActive={isActiveShare}
-                  isLanguage={false}
-                  setIsActive={setIsActiveShare}
-                />
-              </div>
-              <div className={cls.lang}>
-                <WebIcon
-                  onClick={() => {
-                    setIsActiveLang(prev => !prev)
-                    setIsActiveShare(() => false)
-                  }}
-                />
-                <LangOrShareDropdown
-                  isActive={isActiveLang}
-                  list={LangList}
-                  isLanguage={true}
-                  setIsActive={setIsActiveLang}
-                />
-              </div>
+          </div>
+          <div className={cls.navigation}>
+            <ul className={cls.list}>
+              {
+                navigation.map(item => (
+                  <li
+                    key={item.key}
+                    onClick={() => navigate(item.path)}
+                  >{item.title}</li>
+                ))
+              }
+            </ul>
+          </div>
+          <div className={cls.contacts}>
+            <div className={cls.share}>
+              <ShareIcon
+                onClick={() => {
+                  setIsActiveShare(prev => !prev)
+                  setIsActiveLang(() => false)
+                }}
+              />
+              <LangOrShareDropdown
+                list={SharingList}
+                isActive={isActiveShare}
+                isLanguage={false}
+                setIsActive={setIsActiveShare}
+              />
             </div>
-            <div className={cls.dropdown}>
-              <DropdownIcon
-                onClick={() => setIsActiveDropdown(prev => !prev)}
+            <div className={cls.lang}>
+              <WebIcon
+                onClick={() => {
+                  setIsActiveLang(prev => !prev)
+                  setIsActiveShare(() => false)
+                }}
+              />
+              <LangOrShareDropdown
+                isActive={isActiveLang}
+                list={LangList}
+                isLanguage={true}
+                setIsActive={setIsActiveLang}
               />
             </div>
           </div>
+          <div className={cls.dropdown}>
+            <DropdownIcon
+              onClick={() => setIsActiveDropdown(prev => !prev)}
+            />
+          </div>
         </div>
       </div>
-      
-      
-      <div
-      >
+    </div>
+
+
+      <div>
         <Dropdown
           isActive={isActiveDropdown}
           setIsActive={setIsActiveDropdown}

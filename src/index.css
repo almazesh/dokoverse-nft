@@ -25,4 +25,15 @@ ul{
 }
 
 
+.container{
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1441px) {
+
+  .container{
+    max-width: 1300px;
+  }
+}
 

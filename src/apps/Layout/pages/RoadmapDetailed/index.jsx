@@ -9,16 +9,18 @@ const RoadmapDetailed = () => {
   const navigate = useNavigate()
 
   return (
-    <div className={cls.root}>
-      <h2 className={cls.heading}>ROADMAP</h2>
-      <div className={cls.modalContainer}>
+    <div className={cls.container}>
+      <div className={cls.root}>
+        <h2 className={cls.heading}>ROADMAP</h2>
+        <div className={cls.modalContainer}>
         <span
           className={cls.closeModal}
           onClick={() => navigate('/dokovision')}
         >&times;</span>
-        <div className={cls.modalWrapper}>
-          <h3>{modalTitle[category]}</h3>
-          <p>{modalText[category]}</p>
+          <div className={cls.modalWrapper}>
+            <h3>{modalTitle[category]}</h3>
+            <p>{modalText[category]}</p>
+          </div>
         </div>
       </div>
     </div>
