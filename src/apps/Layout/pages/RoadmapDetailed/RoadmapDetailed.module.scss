@@ -19,9 +19,13 @@
     position: absolute;
     right: 2rem;
     top: 0;
-    font-size: 90px;
+    font-size: 80px;
     cursor: pointer;
     font-weight: 100;
+
+    @media (max-width: 450px) {
+      font-size: 50px;
+    }
 
     @media (max-width: 450px) {
       font-size: 60px;
@@ -33,12 +37,12 @@
   .heading {
     text-align: center;
     padding: 50px 0;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 78.02px;
 
     @media (max-width: 1025px) {
-      font-size: 50px;
+      font-size: 40px;
     }
 
     @media (max-width: 450px) {
@@ -63,24 +67,24 @@
 
       p {
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 300;
-        line-height: 36.57px;
+        line-height: 40.57px;
 
         @media (max-width: 1025px) {
           font-size: 18px;
-          line-height: 21.94px;
+          line-height: 30px;
         }
 
         @media (max-width: 450px) {
           font-size: 15px;
-          line-height: 18.29px;
+          line-height: 25px;
           font-weight: 300;
         }
       }
 
       h3{
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 500;
         padding-bottom: 50px;
 

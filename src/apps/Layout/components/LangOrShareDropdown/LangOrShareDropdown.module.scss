@@ -41,6 +41,24 @@
           width: 25px !important;
         }
       }
+
+      span{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: Doko;
+        color: white;
+      }
+    }
+  }
+
+  &.langauge{
+
+    .list{
+      padding: 5px 0;
+
+      li{
+        padding: 10px 0;
+      }
     }
   }
 }

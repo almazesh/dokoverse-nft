@@ -14,7 +14,7 @@ const RoadmapDetailed = () => {
       <div className={cls.modalContainer}>
         <span
           className={cls.closeModal}
-          onClick={() => navigate('/roadmap')}
+          onClick={() => navigate('/dokovision')}
         >&times;</span>
         <div className={cls.modalWrapper}>
           <h3>{modalTitle[category]}</h3>

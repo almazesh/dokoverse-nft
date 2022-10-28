@@ -8,11 +8,6 @@
     left: 0;
     top: 0;
     object-fit: cover;
-
-    //@media (max-width: 450px) {
-    //  top: 0;
-    //  position: fixed;
-    //}
   }
 
   &:after {
@@ -38,6 +33,9 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 900px) {
+        gap: 1rem;
+      }
 
       li {
         border-radius: 5px;
@@ -53,11 +51,23 @@
         text-transform: uppercase;
         transition: .3s;
 
+        @media (max-width: 1441px) {
+          width: 220px;
+          padding: 13px 0;
+          border: 2px solid #4B0096;
+          font-size: 18px;
+        }
+
         @media (max-width: 1025px) {
           width: 200px;
           border: 2px solid #4B0096;
           padding: 12px 0;
           font-size: 15px;
+        }
+
+        @media (max-width: 900px) {
+          font-size: 14px;
+          width: 150px;
         }
 
         &:hover {
@@ -82,7 +92,7 @@
     .heading {
       width: 100%;
 
-      h2{
+      h2 {
         border-radius: 5px;
         text-align: center;
         margin: 50px auto;

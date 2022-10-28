@@ -2,7 +2,6 @@ import React from 'react'
 import cls from './Characters.module.scss'
 import characterImg from '../../../../../assets/images/characterProfile.png'
 import CharacterCard from "../../../components/CharacterCard"
-import bg from '../../../../../assets/images/charactersBg.png'
 
 const charactersList = [
   {

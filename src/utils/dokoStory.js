@@ -30,52 +30,52 @@ export const dokoStory = [
     itemIcon: itemIcon1
   },
   {
-    id: 0,
+    id: 1,
     image: dokoStoryImg2,
     itemIcon: itemIcon2
   },
   {
-    id: 0,
+    id: 2,
     image: dokoStoryImg3,
     itemIcon: itemIcon3
   },
   {
-    id: 0,
+    id: 3,
     image: dokoStoryImg4,
     itemIcon: itemIcon4
   },
   {
-    id: 0,
+    id: 4,
     image: dokoStoryImg5,
     itemIcon: itemIcon5
   },
   {
-    id: 0,
+    id: 5,
     image: dokoStoryImg6,
     itemIcon: itemIcon6
   },
   {
-    id: 0,
+    id: 6,
     image: dokoStoryImg7,
     itemIcon: itemIcon7
   },
   {
-    id: 0,
+    id: 7,
     image: dokoStoryImg8,
     itemIcon: itemIcon8
   },
   {
-    id: 0,
+    id: 8,
     image: dokoStoryImg9,
     itemIcon: itemIcon9
   },
   {
-    id: 0,
+    id: 9,
     image: dokoStoryImg10,
     itemIcon: itemIcon10
   },
   {
-    id: 0,
+    id: 10,
     image: dokoStoryImg11,
     itemIcon: itemIcon11
   },

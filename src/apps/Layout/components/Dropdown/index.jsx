@@ -24,7 +24,10 @@ const Dropdown = (
     >
       <div className={cls.container}>
         <div className={cls.logo}>
-          <Logo/>
+          <Logo onClick={() => {
+            navigate('/')
+            setIsActive(false)
+          }}/>
           <span
             onClick={() => setIsActive(prev => !prev)}
           >&times;</span>
@@ -34,7 +37,10 @@ const Dropdown = (
             navigationList.map(item => (
               <li
                 key={item.key}
-                onClick={() => navigate(item.path)}
+                onClick={() => {
+                  setIsActive(false)
+                  navigate(item.path)
+                }}
               >{item.title}</li>
             ))
           }
@@ -42,25 +48,48 @@ const Dropdown = (
 
         <div className={cls.contacts}>
           <div className={cls.lang}>
-            <WebIcon/>
-            <span
+            <div
               onClick={() => setIsActiveLang(prev => !prev)}
-            >English</span>
-            <ul>
+            >
+              <WebIcon/>
+              <span>English</span>
+            </div>
+            <ul className={`${cls.languageDropdown} ${isActiveLang ? cls.active : ''}`}>
               {
-                langList.map
+                langList.map(item => (
+                  <li
+                    key={item.id}
+                    onClick={() => setIsActiveLang(prev => !prev)}
+                  >
+                    {item.title}
+                  </li>
+                ))
               }
             </ul>
           </div>
           <div className={cls.social}>
-            <ShareIcon/>
-            <span
+            <div
               onClick={() => setIsActiveShare(prev => !prev)}
-            >Soc.networks</span>
+            >
+              <ShareIcon/>
+              <span>Soc.networks</span>
+            </div>
 
-            <ul>
+            <ul className={isActiveShare ? cls.active : ''}>
               {
-
+                shareList.map(item => (
+                  <li
+                    key={item.id}
+                    onClick={() => setIsActiveShare(prev => !prev)}
+                  >
+                    {
+                      <item.icon/>
+                    }
+                    {
+                      item.title
+                    }
+                  </li>
+                ))
               }
             </ul>
           </div>
