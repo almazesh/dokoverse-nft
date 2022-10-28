@@ -19,31 +19,36 @@ const Main = () => {
         autoPlay
       />
       <span className={`${cls.mention} ${isMinting ? cls.disable : ''}`}>watch the full video</span>
-      <div className={`${cls.mainWrapper} ${isMinting ? cls.active : ''}`}>
-        <div className={`${cls.main} ${isMinting ? cls.disable : ''}`}>
-          <Logo/>
-          <button
-            onClick={() => setIsMinting(true)}
-          >Minting
-          </button>
-        </div>
+      
+      <div className={cls.container}>
+        <div className={`${cls.mainWrapper} ${isMinting ? cls.active : ''}`}>
+          <div className={`${cls.main} ${isMinting ? cls.disable : ''}`}>
+            <Logo/>
+            <button
+              onClick={() => setIsMinting(true)}
+            >
+              Minting
+            </button>
+          </div>
 
-        {
-          isPublic ? (
-            <PrivateMinting
-              isMinting={isMinting}
-              setIsConnected={setIsConnected}
-              isConnected={isConnected}
-            />
-          ) : (
-            <PublicMinting
-              isMinting={isMinting}
-              setIsConnected={setIsConnected}
-              isConnected={isConnected}
-            />
-          )
-        }
+          {
+            isPublic ? (
+              <PrivateMinting
+                isMinting={isMinting}
+                setIsConnected={setIsConnected}
+                isConnected={isConnected}
+              />
+            ) : (
+              <PublicMinting
+                isMinting={isMinting}
+                setIsConnected={setIsConnected}
+                isConnected={isConnected}
+              />
+            )
+          }
+        </div>
       </div>
+
     </div>
   )
 }

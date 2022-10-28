@@ -2,6 +2,11 @@
   width: 100%;
   height: 100%;
 
+  .container {
+    width: 1440px;
+    margin: auto;
+  }
+
   .mention {
     position: absolute;
     color: white;
@@ -86,7 +91,7 @@
       }
 
       svg {
-        width: 579px;
+        width: 400px;
         height: auto;
 
         @media (max-width: 1440px) {

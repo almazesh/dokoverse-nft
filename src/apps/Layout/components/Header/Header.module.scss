@@ -1,5 +1,10 @@
-.container {
+.header {
   background: #250841;
+
+  .container {
+    width: 1440px;
+    margin: auto;
+  }
 
   @media (max-width: 450px) {
     background: transparent;

@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import cls from './Header.module.scss'
 import Logo from '../../../../assets/images/dokoLog.png'
 import {ReactComponent as TextLogo} from "../../../../assets/images/textLogo.svg"
 import {ReactComponent as ShareIcon} from "../../../../assets/images/share.svg"
@@ -12,6 +11,7 @@ import {ReactComponent as ShareListIcon2} from "../../../../assets/images/shareL
 import Dropdown from "../Dropdown"
 import LangOrShareDropdown from "../LangOrShareDropdown"
 
+import cls from './Header.module.scss'
 const SharingList = [
   {
     id: 0,
@@ -63,68 +63,72 @@ const Header = () => {
 
   return (
     <>
-      <div className={cls.container}>
-        <div className={cls.root}>
-          <div
-            className={cls.logo}
-            onClick={() => navigate('/')}
-          >
-            <div className={cls.mainLogo}>
-              <img src={Logo} alt="logo"/>
+      <div className={cls.header}>
+        <div className={cls.container}>
+          <div className={cls.root}>
+            <div
+              className={cls.logo}
+              onClick={() => navigate('/')}
+            >
+              <div className={cls.mainLogo}>
+                <img src={Logo} alt="logo"/>
+              </div>
+              <div>
+                <TextLogo/>
+              </div>
             </div>
-            <div>
-              <TextLogo/>
+            <div className={cls.navigation}>
+              <ul className={cls.list}>
+                {
+                  navigation.map(item => (
+                    <li
+                      key={item.key}
+                      onClick={() => navigate(item.path)}
+                    >{item.title}</li>
+                  ))
+                }
+              </ul>
             </div>
-          </div>
-          <div className={cls.navigation}>
-            <ul className={cls.list}>
-              {
-                navigation.map(item => (
-                  <li
-                    key={item.key}
-                    onClick={() => navigate(item.path)}
-                  >{item.title}</li>
-                ))
-              }
-            </ul>
-          </div>
-          <div className={cls.contacts}>
-            <div className={cls.share}>
-              <ShareIcon
-                onClick={() => {
-                  setIsActiveShare(prev => !prev)
-                  setIsActiveLang(() => false)
-                }}
-              />
-              <LangOrShareDropdown
-                list={SharingList}
-                isActive={isActiveShare}
-                isLanguage={false}
-                setIsActive={setIsActiveShare}
+            <div className={cls.contacts}>
+              <div className={cls.share}>
+                <ShareIcon
+                  onClick={() => {
+                    setIsActiveShare(prev => !prev)
+                    setIsActiveLang(() => false)
+                  }}
+                />
+                <LangOrShareDropdown
+                  list={SharingList}
+                  isActive={isActiveShare}
+                  isLanguage={false}
+                  setIsActive={setIsActiveShare}
+                />
+              </div>
+              <div className={cls.lang}>
+                <WebIcon
+                  onClick={() => {
+                    setIsActiveLang(prev => !prev)
+                    setIsActiveShare(() => false)
+                  }}
+                />
+                <LangOrShareDropdown
+                  isActive={isActiveLang}
+                  list={LangList}
+                  isLanguage={true}
+                  setIsActive={setIsActiveLang}
+                />
+              </div>
+            </div>
+            <div className={cls.dropdown}>
+              <DropdownIcon
+                onClick={() => setIsActiveDropdown(prev => !prev)}
               />
             </div>
-            <div className={cls.lang}>
-              <WebIcon
-                onClick={() => {
-                  setIsActiveLang(prev => !prev)
-                  setIsActiveShare(() => false)
-                }}
-              />
-              <LangOrShareDropdown
-                isActive={isActiveLang}
-                list={LangList}
-                isLanguage={true}
-                setIsActive={setIsActiveLang}
-              />
-            </div>
-          </div>
-          <div className={cls.dropdown}>
-            <DropdownIcon
-              onClick={() => setIsActiveDropdown(prev => !prev)}
-            />
           </div>
         </div>
       </div>
+      
+      
       <div
       >
         <Dropdown
