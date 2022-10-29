@@ -1,59 +1,17 @@
 import React, {useState} from 'react'
+import {navigation} from "../../../../utils/navigation"
+import {useNavigate} from "react-router"
+import Dropdown from "../Dropdown"
+import LangOrShareDropdown from "../LangOrShareDropdown"
+import {LangList, SharingList} from "../../../../utils/headersLists"
+
+import {ReactComponent as DropdownIcon} from "../../../../assets/images/dropdownIcon.svg"
 import Logo from '../../../../assets/images/dokoLog.png'
 import {ReactComponent as TextLogo} from "../../../../assets/images/textLogo.svg"
 import {ReactComponent as ShareIcon} from "../../../../assets/images/share.svg"
 import {ReactComponent as WebIcon} from "../../../../assets/images/web.svg"
-import {navigation} from "../../../../utils/navigation"
-import {useNavigate} from "react-router"
-import {ReactComponent as DropdownIcon} from "../../../../assets/images/dropdownIcon.svg"
-import {ReactComponent as ShareListIcon1} from "../../../../assets/images/shareListItem1.svg"
-import {ReactComponent as ShareListIcon2} from "../../../../assets/images/shareListItem2.svg"
-import Dropdown from "../Dropdown"
-import LangOrShareDropdown from "../LangOrShareDropdown"
 
 import cls from './Header.module.scss'
-
-const SharingList = [
-  {
-    id: 0,
-    icon: ShareListIcon1,
-    title: 'opensea'
-  },
-  {
-    id: 1,
-    icon: ShareListIcon2,
-    title: 'opensea'
-  },
-  {
-    id: 2,
-    icon: ShareListIcon1,
-    title: 'opensea'
-  },
-  {
-    id: 3,
-    icon: ShareListIcon2,
-    title: 'opensea'
-  },
-]
-
-const LangList = [
-  {
-    id: 0,
-    title: 'en'
-  },
-  {
-    id: 1,
-    title: 'ko'
-  },
-  {
-    id: 2,
-    title: 'fr'
-  },
-  {
-    id: 3,
-    title: 'es'
-  },
-]
 
 
 const Header = () => {

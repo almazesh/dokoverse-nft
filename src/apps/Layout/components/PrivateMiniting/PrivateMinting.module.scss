@@ -182,11 +182,6 @@
       width: 35%;
       justify-content: flex-end;
 
-
-      @media (max-width: 1441px) {
-        //flex-direction: column;
-      }
-
       @media (max-width: 1025px) {
         gap: 10px;
         flex-direction: row;
@@ -209,12 +204,6 @@
         border-radius: 11px;
         cursor: pointer;
         font-size: 16px;
-
-
-        //@media (max-width: 1441px) {
-        //  height: 60px;
-        //}
-
 
         @media (max-width: 1025px) {
           height: 127px;

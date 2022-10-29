@@ -1,60 +1,13 @@
 import React from 'react'
-import cls from './Characters.module.scss'
-import characterImg from '../../../../../assets/images/characterProfile.png'
 import CharacterCard from "../../../components/CharacterCard"
 
-const charactersList = [
-  {
-    id: 0,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 1,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 2,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 3,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 4,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 5,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 6,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-  {
-    id: 7,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg
-  },
-]
+import {charactersList} from "../../../../../utils/charactersList"
 
-const Characters = ({isMobile}) => {
+import cls from './Characters.module.scss'
+import characterImg from '../../../../../assets/images/characterProfile.png'
+
+
+const Characters = () => {
   return (
     <>
       <div className={cls.root}>
@@ -104,4 +57,5 @@ const Characters = ({isMobile}) => {
     </>
   )
 }
+
 export default Characters

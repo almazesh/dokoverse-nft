@@ -1,8 +1,8 @@
 import React from 'react'
-import cls from './DokoStory.module.scss'
 import {dokoStory} from "../../../../utils/dokoStory"
-import {useNavigate} from "react-router";
+import {useNavigate} from "react-router"
 
+import cls from './DokoStory.module.scss'
 
 const DokoStory = () => {
   const navigate = useNavigate()

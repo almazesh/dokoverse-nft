@@ -1,7 +1,7 @@
 import React from 'react'
-import cls from './DokoStoryAlbum.module.scss'
-import {dokoStory} from "../../../../utils/dokoStory";
+import {dokoStory} from "../../../../utils/dokoStory"
 
+import cls from './DokoStoryAlbum.module.scss'
 
 const DokoStoryAlbum = () => {
   return (

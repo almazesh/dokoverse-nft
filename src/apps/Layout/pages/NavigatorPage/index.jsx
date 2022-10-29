@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import cls from './NavigatorPage.module.scss'
-import Characters from "./Characters";
-import Manifesto from "./Manifesto";
+import Characters from "./Characters"
+import Manifesto from "./Manifesto"
 import Team from "./Team";
 import Partners from "./Partners"
+
 import VideoBg from "../../../../assets/videos/dokoverse.mp4"
+import cls from './NavigatorPage.module.scss'
 
 const navigations = [
   {
@@ -33,7 +34,7 @@ const navigations = [
 ]
 
 const NavigatorPage = () => {
-  const [activeComponentIdx, setActiveComponentIdx] = useState(null);
+  const [activeComponentIdx, setActiveComponentIdx] = useState(null)
   const componentObj = navigations[activeComponentIdx]
 
   return (
@@ -86,20 +87,3 @@ const NavigatorPage = () => {
 }
 
 export default NavigatorPage
-
-// <section className={cls.manifesto}>
-//   <div className={cls.heading}>{navigations[0].title}</div>
-// <Manifesto/>
-// </section>
-// <section className={cls.characters}>
-//   <div className={cls.heading}>{navigations[1].title}</div>
-//   <Characters/>
-// </section>
-// <section className={cls.team}>
-//   <div className={cls.heading}>{navigations[2].title}</div>
-//   <Team/>
-// </section>
-// <section className={cls.partners}>
-//   <div className={cls.heading}>{navigations[3].title}</div>
-//   <Partners/>
-// </section>

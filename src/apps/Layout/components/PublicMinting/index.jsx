@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'
+
+import {ReactComponent as MinusIcon} from "../../../../assets/images/minusIcon.svg"
+import {ReactComponent as PlusIcon} from "../../../../assets/images/plusIcon.svg"
 import cls from "./PublicMinting.module.scss"
-import {ReactComponent as MinusIcon} from "../../../../assets/images/minusIcon.svg";
-import {ReactComponent as PlusIcon} from "../../../../assets/images/plusIcon.svg";
 
 const PublicMinting = (
   {

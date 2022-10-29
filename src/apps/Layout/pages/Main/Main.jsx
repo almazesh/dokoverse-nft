@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import cls from './Main.module.scss'
+import PrivateMinting from "../../components/PrivateMiniting"
+import PublicMinting from "../../components/PublicMinting"
+
 import VideoBg from '../../../../assets/videos/videoplayback.mp4'
 import {ReactComponent as Logo} from "../../../../assets/images/textLogo.svg"
-import PrivateMinting from "../../components/PrivateMiniting";
-import PublicMinting from "../../components/PublicMinting";
+import cls from './Main.module.scss'
 
 const Main = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [isConnected, setIsConnected] = useState(false)
-  const [isPublic, setIsPublic] = useState(false)
+  const [isPublic] = useState(false)
 
 
   return (
