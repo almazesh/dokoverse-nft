@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
+import {useNavigate} from "react-router"
+
 import cls from './Dropdown.module.scss'
 import {ReactComponent as Logo} from '../../../../assets/images/textLogo.svg'
-import {useNavigate} from "react-router"
 import {ReactComponent as WebIcon} from '../../../../assets/images/web.svg'
 import {ReactComponent as ShareIcon} from '../../../../assets/images/share.svg'
 

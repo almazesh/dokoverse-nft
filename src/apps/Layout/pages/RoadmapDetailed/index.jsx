@@ -1,8 +1,9 @@
 import React from 'react';
 import {useNavigate, useParams} from "react-router"
-import cls from './RoadmapDetailed.module.scss'
+
 import { modalText, modalTitle } from '../../../../utils/modalTexts'
 
+import cls from './RoadmapDetailed.module.scss'
 
 const RoadmapDetailed = () => {
   const {category} = useParams()

@@ -1,7 +1,8 @@
 import React from 'react'
+import {useNavigate} from "react-router"
+
 import cls from './Roadmap.module.scss'
 import {BsArrowRightShort} from "react-icons/bs"
-import {useNavigate} from "react-router"
 
 const Roadmap = () => {
   const navigate = useNavigate()

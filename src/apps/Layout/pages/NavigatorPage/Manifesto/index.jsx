@@ -1,7 +1,7 @@
 import React from 'react'
 import cls from './Manifesto.module.scss'
 
-const Manifesto = ({isMobile}) => {
+const Manifesto = () => {
   return (
     <>
       <div className={cls.root}>

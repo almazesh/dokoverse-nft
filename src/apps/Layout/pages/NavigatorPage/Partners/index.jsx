@@ -1,8 +1,7 @@
 import React from 'react'
-import cls from './Partners.module.scss'
-import partnersBg from "../../../../../assets/images/partnersBg.png"
 import {partnersList} from "../../../../../utils/partnersList"
 
+import cls from './Partners.module.scss'
 
 const Partners = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import cls from './CharacterCard.module.scss'
 
 const CharacterCard = (

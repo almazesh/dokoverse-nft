@@ -1,4 +1,5 @@
 import React from 'react'
+
 import cls from './TeamPerson.module.scss'
 
 const TeamPersonCard = (
