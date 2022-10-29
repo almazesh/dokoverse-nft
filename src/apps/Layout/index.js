@@ -6,7 +6,7 @@ import RoadmapDetailed from "./pages/RoadmapDetailed"
 import DokoStory from "./pages/DokoStory"
 import DokoStoryAlbum from "./pages/DokoStoryAlbum"
 
-const pages = {
+const Pages = {
   Main,
   NavigatorPage,
   Roadmap,
@@ -17,5 +17,5 @@ const pages = {
 }
 
 export {
-  pages
+  Pages
 }
