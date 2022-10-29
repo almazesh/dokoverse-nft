@@ -46,7 +46,6 @@ export const modalText = {
     '\n' +
     'Launch 1st DOKOVERSE Coin NORAEBANG in Gangnam-gu, Seoul & Franchise Model\n' +
     'THE DOKOVERSE’s MERGE WITH THE PAST, PRESENT, AND FUTURE… a true taste of NEOSEOUL is coming to the modern world. THE DOKOVERSE SEQUENCE is reaching apotheosis… DOKOMON holders will have the capacity to operate a DOKOVERSE Noraebang anywhere in the world….\n',
-
   ['metaverse-universe']: 'DOKOVERSE Merchanidse Market \n' +
   'The merchandise marketplace features apparel from the DOKOVERSE which is worn by DOKO, and our agents, a-like; apparel which has been collaborated on by designer labels; future technologies smuggled into the modern era; musical artifacts, and more… hmm… perhaps we have a few left-over time crystals to distribute? \n' +
   '\n' +
@@ -88,5 +87,6 @@ export const modalTitle = {
   longevity: 'The Longevity',
   community: 'The Community',
   metaverse: 'The Metaverse',
+  // eslint-disable-next-line
   ['metaverse-universe']: 'Metaverse Universe'
 }
