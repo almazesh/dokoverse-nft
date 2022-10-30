@@ -6,7 +6,6 @@ import {BsArrowRightShort} from "react-icons/bs"
 
 const Roadmap = () => {
   const navigate = useNavigate()
-
   return (
     <div className={cls.container}>
       <div className={cls.root}>
