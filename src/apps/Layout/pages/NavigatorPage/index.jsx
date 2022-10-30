@@ -6,6 +6,7 @@ import Partners from "./Partners"
 
 import VideoBg from "../../../../assets/videos/dokoverse.mp4"
 import cls from './NavigatorPage.module.scss'
+import {BiChevronDown} from "react-icons/bi"
 
 const navigations = [
   {
@@ -34,8 +35,14 @@ const navigations = [
 ]
 
 const NavigatorPage = () => {
-  const [activeComponentIdx, setActiveComponentIdx] = useState(null)
+  const [activeComponentIdx, setActiveComponentIdx] = useState(0)
+  const [isActiveTabSelect, setIsActiveTabSelect] = useState(false);
   const componentObj = navigations[activeComponentIdx]
+
+  const onChangeValueSelect = (e) => {
+    setActiveComponentIdx(e.target.options.selectedIndex)
+  }
+
 
   return (
     <>
@@ -46,40 +53,61 @@ const NavigatorPage = () => {
           muted
           autoPlay
         />
-        <div className={cls.navigationContainer}>
-          <ul className={cls.navigationList}>
+
+
+        <div className={cls.container}>
+          <div className={cls.navigationContainer}>
+            <ul className={cls.navigationList}>
+              {
+                navigations.map((nav, idx) => (
+                  <li
+                    key={nav.id}
+                    onClick={() => setActiveComponentIdx(idx)}
+                    className={`${idx === activeComponentIdx ? cls.active : ''}`}
+                  >
+                    {nav.title}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <div className={cls.laptop}>
             {
-              navigations.map((nav, idx) => (
-                <li
-                  key={nav.id}
-                  onClick={() => setActiveComponentIdx(idx)}
-                  className={`${idx === activeComponentIdx ? cls.active : ''}`}
-                >
-                  {nav.title}
-                </li>
-              ))
+              componentObj ? componentObj.component : ''
             }
-          </ul>
+          </div>
         </div>
 
-        <div className={cls.laptop}>
+        <div className={cls.mobile}>
+          <div className={cls.tabSelect}>
+            <div
+              className={cls.activeTab}
+              onClick={() => setIsActiveTabSelect(prev => !prev)}
+            >
+              <h3>{componentObj.title}</h3>
+              <BiChevronDown/>
+            </div>
+
+            <ul className={`${cls.tabList} ${isActiveTabSelect ? cls.active : ''}`}>
+              {
+                navigations.map(item => (
+                  <li
+                    key={item.id}
+                    className={`${item.id === activeComponentIdx ? cls.active : ''}`}
+                    onClick={() => setActiveComponentIdx(item.id)}
+                  >{item.title}</li>
+                ))
+              }
+            </ul>
+
+
+          </div>
+
           {
-            componentObj ? componentObj.component : ''
+            componentObj && componentObj.component
           }
         </div>
-
-        <ul className={cls.mobile}>
-          {
-            navigations.map(item => (
-              <li key={item.id}>
-                <div className={cls.heading}>
-                  <h2>{item.title}</h2>
-                </div>
-                {item.component}
-              </li>
-            ))
-          }
-        </ul>
 
       </div>
     </>
@@ -87,3 +115,27 @@ const NavigatorPage = () => {
 }
 
 export default NavigatorPage
+
+// {
+//   navigations.map(item => (
+//     <li key={item.id}>
+//       <div className={cls.heading}>
+//         <h2>{item.title}</h2>
+//       </div>
+//       {item.component}
+//     </li>
+//   ))
+// }
+
+
+// <select
+// name="componentTabs"
+// ref={selectRef}
+// onChange={onChangeValueSelect}
+//   >
+//   {
+//     navigations.map((item) => (
+//       <option value={item.title}>{item.title}</option>
+//     ))
+//   }
+// </select>
