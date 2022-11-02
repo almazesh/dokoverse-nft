@@ -4,7 +4,7 @@ import CharacterCard from "../../../components/CharacterCard"
 import {charactersList} from "../../../../../utils/charactersList"
 
 import cls from './Characters.module.scss'
-import characterImg from '../../../../../assets/images/characterProfile.png'
+import characterImg from '../../../../../assets/images/characterProfile1.png'
 
 
 const Characters = () => {

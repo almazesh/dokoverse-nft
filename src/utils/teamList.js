@@ -9,6 +9,7 @@ import teamProfileImg8 from "../assets/images/teamProfileImg8.png"
 import teamProfileImg9 from "../assets/images/teamProfileImg9.png"
 import teamProfileImg10 from "../assets/images/teamProfileImg10.png"
 import teamProfileImg11 from "../assets/images/teamProfileImg11.png"
+import teamProfileImg12 from "../assets/images/teamProfileImg12.png"
 
 
 export const teamList =  [
@@ -16,7 +17,7 @@ export const teamList =  [
     id: 0,
     nickname: '@doko_twi',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg1
+    profileImg: teamProfileImg12
   },
   {
     id: 1,
@@ -77,5 +78,11 @@ export const teamList =  [
     nickname: '@doko_twi',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
     profileImg: teamProfileImg11
+  },
+  {
+    id: 11,
+    nickname: '@doko_twi',
+    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
+    profileImg: teamProfileImg1
   },
 ]

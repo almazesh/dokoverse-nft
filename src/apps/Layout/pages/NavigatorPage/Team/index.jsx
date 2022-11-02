@@ -3,7 +3,7 @@ import TeamPersonCard from "../../../components/TeamPersonCard"
 
 import cls from './Team.module.scss'
 import teamBanner from '../../../../../assets/images/teamPeople.png'
-import {teamList} from "../../../../../utils/teamList";
+import {teamList} from "../../../../../utils/teamList"
 
 
 const Team = () => {
