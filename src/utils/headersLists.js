@@ -1,5 +1,8 @@
-import {ReactComponent as ShareListIcon1} from "../assets/images/shareListItem1.svg";
-import {ReactComponent as ShareListIcon2} from "../assets/images/shareListItem2.svg";
+import {ReactComponent as ShareListIcon1} from "../assets/images/shareListItem1.svg"
+import {ReactComponent as ShareListIcon2} from "../assets/images/shareListItem2.svg"
+import {RiInstagramFill} from "react-icons/ri"
+import {FaDiscord} from "react-icons/fa"
+
 
 export const SharingList = [
   {
@@ -10,17 +13,17 @@ export const SharingList = [
   {
     id: 1,
     icon: ShareListIcon2,
-    title: 'opensea'
+    title: 'twitter'
   },
   {
     id: 2,
-    icon: ShareListIcon1,
-    title: 'opensea'
+    icon: RiInstagramFill,
+    title: 'instagram'
   },
   {
     id: 3,
-    icon: ShareListIcon2,
-    title: 'opensea'
+    icon: FaDiscord,
+    title: 'discord'
   },
 ]
 
