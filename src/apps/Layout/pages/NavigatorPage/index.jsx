@@ -95,7 +95,10 @@ const NavigatorPage = () => {
                   <li
                     key={item.id}
                     className={`${item.id === activeComponentIdx ? cls.active : ''}`}
-                    onClick={() => setActiveComponentIdx(item.id)}
+                    onClick={() => {
+                      setActiveComponentIdx(item.id)
+                      setIsActiveTabSelect(false)
+                    }}
                   >{item.title}</li>
                 ))
               }
@@ -115,27 +118,3 @@ const NavigatorPage = () => {
 }
 
 export default NavigatorPage
-
-// {
-//   navigations.map(item => (
-//     <li key={item.id}>
-//       <div className={cls.heading}>
-//         <h2>{item.title}</h2>
-//       </div>
-//       {item.component}
-//     </li>
-//   ))
-// }
-
-
-// <select
-// name="componentTabs"
-// ref={selectRef}
-// onChange={onChangeValueSelect}
-//   >
-//   {
-//     navigations.map((item) => (
-//       <option value={item.title}>{item.title}</option>
-//     ))
-//   }
-// </select>

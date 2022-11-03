@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1720px;
   margin: 0 auto;
 
@@ -7,7 +7,7 @@
     height: 100%;
     color: white;
 
-    &:after{
+    &:after {
       position: fixed;
       content: '';
       width: 100%;
@@ -64,6 +64,12 @@
         justify-content: center;
       }
 
+      @media (max-width: 420px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
       div {
         background: #21053b;
         cursor: pointer;
@@ -74,7 +80,13 @@
           height: 234px;
         }
 
-        &:hover .container:after{
+        @media (max-width: 420px) {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+
+        &:hover .container:after {
           opacity: 1;
         }
 
@@ -100,6 +112,10 @@
             padding: 20px;
           }
 
+          @media (max-width: 420px) {
+            width: 100%;
+          }
+
           &:after {
             position: absolute;
             content: '';
@@ -114,13 +130,19 @@
             opacity: 0;
 
             @media (max-width: 770px) {
-              opacity: 0.7  ;
+              opacity: 0.7;
               width: 100px;
               height: 100px;
               bottom: 0;
               left: 0;
               filter: blur(80px);
             }
+
+            //@media (max-width: 420px) {
+            //  top: 0;
+            //  left: -10%;
+            //}
+
           }
 
 

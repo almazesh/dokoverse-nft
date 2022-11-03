@@ -9,7 +9,7 @@ import cls from './Main.module.scss'
 const Main = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [isConnected, setIsConnected] = useState(false)
-  const [isPublic] = useState(false)
+  const [isPublic] = useState(true)
   const [isVideoShowing, setIsVideoShowing] = useState(false)
 
 
@@ -26,6 +26,7 @@ const Main = () => {
               height="315"
               src="https://www.youtube.com/embed/X1DUmzaKJYM"
               title="YouTube video player"
+              aria-controls={'false'}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen>

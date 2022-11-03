@@ -7,19 +7,19 @@ import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs";
 
 const DokoStory = () => {
   const navigate = useNavigate()
-  const [perPage, setPerPage] = useState({from: 0, to: 4})
+  const [perPage, setPerPage] = useState({from: 0, to: 2})
 
   const changePage = (from, to, ascOrDesc) => {
 
     if (ascOrDesc === '+') {
       setPerPage({
-        from: from + 4,
-        to: to + 4
+        from: from + 2,
+        to: to + 2
       })
     } else {
       setPerPage({
-        from: from - 4,
-        to: to - 4
+        from: from - 2,
+        to: to - 2
       })
     }
   }
