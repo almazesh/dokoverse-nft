@@ -29,8 +29,8 @@
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      row-gap: 135px;
-      padding: 150px 1rem 50px 1rem;
+      row-gap: 30px;
+      padding: 30px 0rem 30px 0rem;
 
       @media (max-width: 1025px) {
         padding: 50px 0 50px 0;
@@ -44,6 +44,19 @@
       li {
         @media (max-width: 1025px) {
           gap: 25px;
+        }
+
+        .image{
+
+          img{
+            &::selection {
+              background: none;
+            }
+
+            &::-moz-selection {
+              background: none;
+            }
+          }
         }
 
         &:nth-child(1) {
@@ -87,7 +100,8 @@
           .imageContainer {
             width: 700px;
             display: flex;
-            height: 314px;
+            //height: 314px;
+            height: 200px;
             align-items: flex-start;
             gap: 30px;
             position: relative;
@@ -192,7 +206,8 @@
           .imageContainer {
             width: 100%;
             display: flex;
-            height: 314px;
+            //height: 314px;
+            height: 200px;
             gap: 30px;
             position: relative;
 
@@ -324,11 +339,11 @@
             width: 100%;
 
             .text{
-              width: 100% !important;
+              width: 90% !important;
+              margin-left: auto !important;
 
               p{
-                width: 90% !important;
-                text-align: left;
+                width: 100% !important;
               }
             }
 
@@ -401,11 +416,11 @@
         .text {
 
           p {
-            font-size: 18px;
-            line-height: 28px;
+            font-size: 16px;
+            line-height: 25px;
             text-align: center;
             font-family: Doko;
-            letter-spacing: 8px;
+            letter-spacing: 5px;
             text-transform: uppercase;
             width: 100%;
 
