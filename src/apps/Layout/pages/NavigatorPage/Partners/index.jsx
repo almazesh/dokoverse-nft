@@ -9,8 +9,8 @@ const Partners = () => {
       <div className={cls.root}>
         <div className={cls.description}>
           <p>
-            Doko (도코) is a South Korean singer, songwriter, composer and producer of C9 Entertainment.He is a member of
-            the mixed duo Poetic Narrator.
+            Founded by a famous K Pop Producer, singer, and songwriter alongside a team of NFT, Blockchain, marketing,
+            artistic, community, and creative experts from over 7 countries and 10 nationalities.
           </p>
         </div>
         <div className={cls.partners}>

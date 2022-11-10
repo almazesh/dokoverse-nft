@@ -1,47 +1,51 @@
-import {ReactComponent as ShareListIcon1} from "../assets/images/shareListItem1.svg"
-import {ReactComponent as ShareListIcon2} from "../assets/images/shareListItem2.svg"
-import {RiInstagramFill} from "react-icons/ri"
-import {FaDiscord} from "react-icons/fa"
+import {ReactComponent as OpenSeaIcon} from "../assets/images/shareListItem1.svg"
+import {ReactComponent as TwitterIcon} from "../assets/images/shareListItem2.svg"
+import {ReactComponent as DiscordIcon} from "../assets/images/discordIcon.svg"
+import {ReactComponent as YoutubeIcon} from "../assets/images/youtubeIcon.svg"
 
 
 export const SharingList = [
   {
     id: 0,
-    icon: ShareListIcon1,
-    title: 'opensea'
+    icon: DiscordIcon,
+    title: 'discord'
   },
   {
     id: 1,
-    icon: ShareListIcon2,
+    icon: TwitterIcon,
     title: 'twitter'
   },
   {
     id: 2,
-    icon: RiInstagramFill,
-    title: 'instagram'
+    icon: OpenSeaIcon,
+    title: 'open sea'
   },
   {
     id: 3,
-    icon: FaDiscord,
-    title: 'discord'
+    icon: YoutubeIcon,
+    title: 'youtube'
   },
 ]
 
 export const LangList = [
   {
     id: 0,
-    title: 'en'
+    title_mobile: 'english',
+    title_laptop: 'en'
   },
   {
     id: 1,
-    title: 'ko'
+    title_mobile: 'korean',
+    title_laptop: 'ko'
   },
   {
     id: 2,
-    title: 'fr'
+    title_mobile: 'french',
+    title_laptop: 'fr'
   },
   {
     id: 3,
-    title: 'es'
+    title_mobile: 'spanish',
+    title_laptop: 'es'
   },
 ]

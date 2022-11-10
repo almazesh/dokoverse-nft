@@ -19,7 +19,7 @@
       background: linear-gradient(153deg, rgba(41, 23, 111, 1) 0%, rgba(37, 8, 65, 1) 50%, rgba(41, 23, 111, 1) 100%);
 
       @media (max-width: 1025px) {
-        width: 600px;
+        width: 685px;
         padding: 30px;
         border-radius: 20px;
       }
@@ -31,7 +31,7 @@
 
       .cardContainer {
         display: flex;
-        gap: 70px;
+        gap: 80px;
 
         @media (max-width: 1025px) {
           gap: 60px;
@@ -45,7 +45,7 @@
         }
 
         .profileImg {
-          width: 350px;
+          width: 250px;
           height: 353px;
 
           @media (max-width: 1025px) {
@@ -104,7 +104,7 @@
           .aboutObj {
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 20px;
 
             @media (max-width: 1025px) {
               gap: 15px;
@@ -114,6 +114,48 @@
               width: 80%;
               margin: 0 auto;
             }
+
+            .name {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 80px;
+
+              @media (max-width: 1025px) {
+                gap: 50px;
+              }
+
+              .key {
+                font-size: 25px;
+                font-weight: 500;
+
+                @media (max-width: 1025px) {
+                  font-size: 20px;
+                }
+
+                @media (max-width: 460px) {
+                  font-size: 16px;
+                  line-height: 19.5px;
+                }
+              }
+
+              .value {
+                font-family: 'Montserrat';
+                font-size: 25px;
+                white-space: nowrap;
+
+                @media (max-width: 1025px) {
+                  font-size: 20px;
+                  font-weight: 400;
+                }
+
+                @media (max-width: 460px) {
+                  font-size: 16px;
+                  line-height: 19.5px;
+                }
+              }
+            }
+
 
             .location {
               display: flex;
@@ -132,12 +174,17 @@
                 @media (max-width: 1025px) {
                   font-size: 20px;
                 }
+
+                @media (max-width: 460px) {
+                  font-size: 16px;
+                  line-height: 19.5px;
+                }
               }
 
               .value {
-                font-family: Doko;
+                font-family: "Montserrat";
                 font-size: 25px;
-                text-transform: uppercase;
+                font-weight: 500;
                 white-space: nowrap;
 
                 @media (max-width: 1025px) {
@@ -146,6 +193,10 @@
                   line-height: 24px;
                 }
 
+                @media (max-width: 460px) {
+                  font-size: 16px;
+                  line-height: 19.5px;
+                }
 
               }
             }
@@ -163,9 +214,16 @@
               .key {
                 font-size: 25px;
                 font-weight: 500;
+                line-height: 24.38px;
+
 
                 @media (max-width: 1025px) {
                   font-size: 20px;
+                }
+
+                @media (max-width: 460px) {
+                  font-size: 16px;
+                  line-height: 19.5px;
                 }
               }
 
@@ -173,6 +231,12 @@
                 font-size: 30px;
                 font-family: 'Just Me Again Down Here', cursive;
                 letter-spacing: 4px;
+                line-height: 24.38px;
+
+                @media (max-width: 460px) {
+                  font-size: 25px;
+                  line-height: 19.5px;
+                }
               }
             }
           }
@@ -183,15 +247,24 @@
   }
 
   .listCharacterContainer {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 1251px) {
+      width: 95%;
+
+    }
 
     .listCharacter {
       display: flex;
       flex-wrap: wrap;
-      gap: 85px;
-
+      column-gap: 200px;
+      row-gap: 80px;
       justify-content: center;
+
+      @media (max-width: 1251px) {
+        gap: 100px;
+      }
 
       @media (max-width: 1025px) {
         gap: 30px;

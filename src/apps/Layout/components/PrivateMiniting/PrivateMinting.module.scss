@@ -200,7 +200,7 @@
         padding: 0 20px;
         height: 100%;
         font-weight: 300;
-        background: rgba(37, 8, 65, 0.5);
+        background: rgba(37, 8, 65, 0.7);
         border-radius: 11px;
         cursor: pointer;
         font-size: 16px;
@@ -221,7 +221,7 @@
   }
 
   .controlling {
-    background: linear-gradient(243deg, rgba(37, 8, 65, .5) 57%, rgba(41, 23, 111, .5) 100%);
+    background: linear-gradient(243deg, rgba(37, 8, 65, .7) 57%, rgba(41, 23, 111, .5) 100%);
     height: 450px;
     border-radius: 11px;
 
@@ -234,175 +234,209 @@
     }
 
     .controllingWrapper {
-      width: 60%;
+      width: 70%;
       height: 80%;
       margin: 0 auto;
       padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      @media (max-width: 1441px ) {
+        width: 90%;
+      }
 
       @media (max-width: 1025px) {
         margin: 2rem auto 0 auto;
-        width: 80%;
+        width: 90%;
+        padding: 0;
+        gap: 5rem;
       }
 
       @media (max-width: 770px) {
-        margin: 0 auto;
+        margin: 1.5rem auto 0 auto;
         width: 80%;
+        gap: 2.5rem;
       }
 
-      .walletData {
+      .dataContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
 
+        .walletData {
 
-        .title {
-          font-size: 28px;
-          font-weight: 400;
-          color: white;
-          margin-bottom: 20px;
-
-          @media (max-width: 1025px) {
-            font-size: 20px;
-            font-weight: 500;
-          }
-        }
-
-        .mintingData {
-          position: relative;
-          padding: 20px 0 0 50px;
-          margin-bottom: 45px;
-
-          @media (max-width: 1025px) {
-            padding: 20px 0 0 30px;
-          }
-
-          &:before {
-            position: absolute;
-            content: '';
-            left: 0;
-            width: 1px;
-            height: 100%;
-            background: white;
-          }
-
-          h2 {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 58.51px;
+          .title {
+            font-size: 28px;
+            font-weight: 400;
             color: white;
-            padding-bottom: 50px;
+            margin-bottom: 20px;
 
             @media (max-width: 1025px) {
-              font-size: 25px;
-              padding-bottom: 40px;
-            }
-
-            @media (max-width: 770px) {
-              font-size: 23px;
-              padding-bottom: 20px;
+              font-size: 20px;
+              font-weight: 500;
             }
           }
 
-          .max {
-            color: white;
-            padding-bottom: 45px;
-            display: flex;
-            width: 300px;
-            justify-content: space-between;
-            align-items: center;
+          .mintingData {
+            position: relative;
+            padding: 20px 0 0 50px;
 
             @media (max-width: 1025px) {
-              padding-bottom: 20px;
-              width: 250px;
+              padding: 20px 0 0 30px;
             }
 
-            span {
-              font-size: 22px;
+            &:before {
+              position: absolute;
+              content: '';
+              left: 0;
+              width: 1px;
+              height: 100%;
+              background: white;
+            }
+
+            h2 {
+              font-size: 48px;
               font-weight: 600;
+              line-height: 58.51px;
+              color: white;
+              padding-bottom: 50px;
 
               @media (max-width: 1025px) {
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 25px;
+                padding-bottom: 40px;
               }
 
               @media (max-width: 770px) {
-                font-weight: 600;
+                font-size: 23px;
+                padding-bottom: 20px;
               }
-
-              &:nth-child(1) {
-                padding-right: 40px;
-                font-weight: 400;
-              }
-
-              &:nth-child(2) {
-
-                @media (max-width: 1025px) {
-                  font-weight: 600;
-                  font-size: 16px;
-                }
-              }
-
-              &:nth-child(3) {
-
-                @media (max-width: 1025px) {
-                  font-weight: 600;
-                  font-size: 16px;
-                }
-              }
-
-            }
-          }
-
-          .incrementAndDecrement {
-            color: white;
-            display: flex;
-            align-items: center;
-            width: 300px;
-            justify-content: space-between;
-            gap: 60px;
-
-            @media (max-width: 1025px) {
-              width: 250px;
             }
 
-            span {
-              font-size: 22px !important;
-              font-weight: 400 !important;
+            .max {
+              color: white;
+              padding-bottom: 45px;
+              display: flex;
+              width: 300px;
+              justify-content: space-between;
+              align-items: center;
 
               @media (max-width: 1025px) {
-                font-size: 16px !important;
-                font-weight: 400;
+                padding-bottom: 20px;
+                width: 250px;
+              }
+
+              span {
+                font-size: 22px;
+                font-weight: 600;
+
+                @media (max-width: 1025px) {
+                  font-size: 16px;
+                  font-weight: 400;
+                }
+
+                @media (max-width: 770px) {
+                  font-weight: 600;
+                }
+
+                &:nth-child(1) {
+                  padding-right: 40px;
+                  font-weight: 400;
+                }
+
+                &:nth-child(2) {
+
+                  @media (max-width: 1025px) {
+                    font-weight: 600;
+                    font-size: 16px;
+                  }
+                }
+
+                &:nth-child(3) {
+
+                  @media (max-width: 1025px) {
+                    font-weight: 600;
+                    font-size: 16px;
+                  }
+                }
+
               }
             }
 
-            div {
+            .incrementAndDecrement {
+              color: white;
               display: flex;
               align-items: center;
-              gap: 30px;
-
-
-              svg {
-                cursor: pointer;
-
-                &.disabled {
-                  opacity: 0.5;
-                  pointer-events: none;
-                }
-
-                @media (max-width: 1025px) {
-                  width: 15px;
-                }
-              }
-            }
-
-            span {
-              font-size: 26px;
-              font-weight: 600;
+              width: 300px;
+              justify-content: space-between;
+              gap: 60px;
 
               @media (max-width: 1025px) {
-                font-size: 16px;
+                width: 250px;
+              }
+
+              span {
+                font-size: 22px !important;
+                font-weight: 400 !important;
+
+                @media (max-width: 1025px) {
+                  font-size: 16px !important;
+                  font-weight: 400;
+                }
+              }
+
+              div {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+
+                svg {
+                  cursor: pointer;
+
+                  &.disabled {
+                    opacity: 0.5;
+                    pointer-events: none;
+                  }
+
+                  @media (max-width: 1025px) {
+                    width: 15px;
+                  }
+                }
+              }
+
+              span {
+                font-size: 26px;
+                font-weight: 600;
+
+                @media (max-width: 1025px) {
+                  font-size: 16px;
+                }
               }
             }
           }
         }
+
+        .character{
+          width: 250px;
+          height: auto;
+
+          @media (max-width: 1025px) {
+            width: 200px;
+          }
+
+          @media (max-width: 571px) {
+            display: none;
+          }
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
+
 
       .buttonContainer {
         width: 100%;

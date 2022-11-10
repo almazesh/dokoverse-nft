@@ -18,6 +18,7 @@ const Dropdown = (
   const navigate = useNavigate()
   const [isActiveLang, setIsActiveLang] = useState(false);
   const [isActiveShare, setIsActiveShare] = useState(false);
+  const [isMercantileActive, setIsMercantileActive] = useState(false);
 
   return (
     <div
@@ -45,6 +46,10 @@ const Dropdown = (
               >{item.title}</li>
             ))
           }
+          <li
+            className={`${isMercantileActive ? cls.mercantile : ''}`}
+            onClick={() => setIsMercantileActive(prev => !prev)}
+          >{isMercantileActive ? 'Sequence Initializing...' : 'The Mercantile'}</li>
         </ul>
 
         <div className={cls.contacts}>
@@ -62,7 +67,7 @@ const Dropdown = (
                     key={item.id}
                     onClick={() => setIsActiveLang(prev => !prev)}
                   >
-                    {item.title}
+                    {item.title_mobile}
                   </li>
                 ))
               }

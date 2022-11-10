@@ -15,73 +15,85 @@ import teamProfileImg12 from "../assets/images/teamProfileImg12.png"
 export const teamList =  [
   {
     id: 0,
-    nickname: '@doko_twi',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg12
+    nickname: '@doko',
+    position: 'CO-FOUNDER AND CEO ‘THE CHOSEN ONE',
+    about: 'Founder and ceo of pig entertainment music producer, songwriter and singer',
+    profileImg: teamProfileImg8
   },
   {
     id: 1,
-    nickname: '@doko_twi',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg2
+    nickname: '@james',
+    position: 'DESIGN TEAM LEAD ‘ITAEWON JESUS AND VISIONARY',
+    about: 'Artist',
+    profileImg: teamProfileImg6
   },
   {
     id: 2,
-    nickname: '@doko_twi',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg3
+    nickname: '@laura valls alvares',
+    position: 'GLOBAL MARKETING MANAGER - ’THE WEB 3 QUEEN’',
+    about: 'Co-founder @lv global head of strategy @crypto moon walkers marketing and nft expert',
+    profileImg: teamProfileImg7
   },
   {
     id: 3,
-    nickname: '@doko_twi',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg4
+    nickname: '@aaron cossrow',
+    position: 'LEAD ILLUSTRATOR ‘GLODEN HANDS’',
+    about: 'Painter, fine artist',
+    profileImg: teamProfileImg5
   },
   {
     id: 4,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg5
+    profileImg: teamProfileImg2
   },
   {
     id: 5,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg6
+    profileImg: teamProfileImg12
   },
   {
     id: 6,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg7
+    profileImg: teamProfileImg3
   },
   {
     id: 7,
     nickname: '@doko_twi',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg8
-  },
-  {
-    id: 8,
-    nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
     profileImg: teamProfileImg9
   },
   {
-    id: 9,
+    id: 8,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
     profileImg: teamProfileImg10
   },
   {
-    id: 10,
+    id: 9,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
     profileImg: teamProfileImg11
   },
   {
+    id: 10,
+    nickname: '@doko_twi',
+    position: 'doko',
+    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
+    profileImg: teamProfileImg4
+  },
+  {
     id: 11,
     nickname: '@doko_twi',
+    position: 'doko',
     about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
     profileImg: teamProfileImg1
   },

@@ -3,7 +3,7 @@ import {dokoStory} from "../../../../utils/dokoStory"
 import {useNavigate} from "react-router"
 
 import cls from './DokoStory.module.scss'
-import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs";
+import {BsArrowLeftShort, BsArrowRightShort} from "react-icons/bs"
 
 const DokoStory = () => {
   const navigate = useNavigate()
@@ -33,8 +33,9 @@ const DokoStory = () => {
               <li key={story.id}>
                 <div className={cls.text}>
                   <p>
-                    SOUND and MUSIC are quintessential forces which unify our human collective, however, there is no
-                    such thing as perfect musical sound or frequency which enlightens humans upon g… or is there?
+                    {
+                      story.description
+                    }
                   </p>
                 </div>
                 <div className={cls.imageContainer}>
@@ -55,7 +56,7 @@ const DokoStory = () => {
           />
           <BsArrowRightShort
             onClick={() => changePage(perPage.from, perPage.to, '+')}
-            className={`${perPage.to === dokoStory.length + 1 ? cls.disable : ''}`}
+            className={`${perPage.to === dokoStory.length ? cls.disable : ''}`}
           />
         </div>
       </div>

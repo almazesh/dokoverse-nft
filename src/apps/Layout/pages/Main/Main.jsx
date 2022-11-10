@@ -9,7 +9,7 @@ import cls from './Main.module.scss'
 const Main = () => {
   const [isMinting, setIsMinting] = useState(false)
   const [isConnected, setIsConnected] = useState(false)
-  const [isPublic] = useState(true)
+  const [isPublic] = useState(false)
   const [isVideoShowing, setIsVideoShowing] = useState(false)
 
 

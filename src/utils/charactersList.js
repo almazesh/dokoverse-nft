@@ -12,63 +12,66 @@ import characterImg10 from '../assets/images/characterProfile10.png'
 
 export const charactersList = [
   {
-    id: 0,
-    location: 'Neo-Seoul',
-    year: '2111',
-    image: characterImg1
-  },
-  {
     id: 1,
     location: 'Neo-Seoul',
     year: '2111',
+    name: 'Scientist Ajumma',
     image: characterImg2
   },
   {
     id: 2,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Neo-Seoul, Korea',
+    year: '1487',
+    name: 'King Sejong',
     image: characterImg3
   },
   {
     id: 3,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Busan',
+    year: '2022',
+    name: 'Hyuna Kim',
     image: characterImg4
   },
   {
     id: 4,
     location: 'Neo-Seoul',
     year: '2111',
+    name: 'Lazz-In',
     image: characterImg5
   },
   {
     id: 5,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Mexico City',
+    year: '1971',
+    name: 'El Mariachi',
     image: characterImg6
   },
   {
     id: 6,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Vienna',
+    year: '1782',
+    name: 'Mozart',
     image: characterImg7
   },
   {
     id: 7,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Jamaica',
+    year: '1971',
+    name: 'Rastaman',
     image: characterImg8
   },
   {
     id: 8,
     location: 'Neo-Seoul',
     year: '2111',
+    name: '6Q-9X',
     image: characterImg9
   },
   {
     id: 9,
-    location: 'Neo-Seoul',
-    year: '2111',
+    location: 'Denmark',
+    year: '840',
+    name: 'Magnus the Viking',
     image: characterImg10
   },
 ]
