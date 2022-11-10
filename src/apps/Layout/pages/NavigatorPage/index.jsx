@@ -48,8 +48,6 @@ const NavigatorPage = () => {
           muted
           autoPlay
         />
-
-
         <div className={cls.container}>
           <div className={cls.navigationContainer}>
             <ul className={cls.navigationList}>
@@ -74,7 +72,7 @@ const NavigatorPage = () => {
           </div>
         </div>
 
-        
+
         {/* Mobile */}
 
         <div className={cls.mobile}>
