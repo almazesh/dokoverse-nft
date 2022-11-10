@@ -14,9 +14,4 @@ export const navigation = [
     title: 'dokovision',
     path: '/dokovision'
   },
-  {
-    key: 3,
-    title: 'the mercantile',
-    path: '/mercantile'
-  }
 ]

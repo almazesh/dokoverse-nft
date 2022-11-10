@@ -6,7 +6,7 @@ import LangOrShareDropdown from "../LangOrShareDropdown"
 import {LangList, SharingList} from "../../../../utils/headersLists"
 
 import {ReactComponent as DropdownIcon} from "../../../../assets/images/dropdownIcon.svg"
-import Logo from '../../../../assets/images/dokoLog.png'
+import {ReactComponent as Logo} from '../../../../assets/images/dokLogo.svg'
 import {ReactComponent as TextLogo} from "../../../../assets/images/textLogo.svg"
 import {ReactComponent as ShareIcon} from "../../../../assets/images/share.svg"
 import {ReactComponent as WebIcon} from "../../../../assets/images/web.svg"
@@ -18,7 +18,8 @@ const Header = () => {
   const navigate = useNavigate()
   const [isActiveShare, setIsActiveShare] = useState(false)
   const [isActiveLang, setIsActiveLang] = useState(false)
-  const [isActiveDropdown, setIsActiveDropdown] = useState(false);
+  const [isActiveDropdown, setIsActiveDropdown] = useState(false)
+  const [isMercantileActive, setIsMercantileActive] = useState(false)
 
   return (
     <>
@@ -30,7 +31,7 @@ const Header = () => {
             onClick={() => navigate('/')}
           >
             <div className={cls.mainLogo}>
-              <img src={Logo} alt="logo"/>
+              <Logo/>
             </div>
             <div>
               <TextLogo/>
@@ -46,6 +47,10 @@ const Header = () => {
                   >{item.title}</li>
                 ))
               }
+              <li
+                className={`${isMercantileActive ? cls.mercantile : ''}`}
+                onClick={() => setIsMercantileActive(prev => !prev)}
+              >{isMercantileActive ? 'Sequence Initializing...' : 'The Mercantile'}</li>
             </ul>
           </div>
           <div className={cls.contacts}>

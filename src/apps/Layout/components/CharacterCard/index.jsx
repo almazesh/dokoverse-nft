@@ -6,7 +6,8 @@ const CharacterCard = (
   {
     profileImg,
     location,
-    year
+    year,
+    name
   }
 ) => {
   return (
@@ -16,6 +17,10 @@ const CharacterCard = (
           <img src={profileImg} alt="profile img"/>
         </div>
         <div className={cls.aboutObj}>
+          <div className={cls.name}>
+            <span className={cls.key}>Name</span>
+            <span className={cls.value}>{name}</span>
+          </div>
           <div className={cls.location}>
             <span className={cls.key}>Location</span>
             <span className={cls.value}>{location}</span>

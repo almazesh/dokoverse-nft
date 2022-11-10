@@ -20,6 +20,10 @@ const Characters = () => {
               <div className={cls.about}>
                 <h2>Doko friends</h2>
                 <div className={cls.aboutObj}>
+                  <div className={cls.name}>
+                    <span className={cls.key}>Name</span>
+                    <span className={cls.value}>The Chosen One: DOKO</span>
+                  </div>
                   <div className={cls.location}>
                     <span className={cls.key}>Location</span>
                     <span className={cls.value}>Neo-Seoul</span>
@@ -42,6 +46,7 @@ const Characters = () => {
                   key={character.id}
                   location={character.location}
                   profileImg={character.image}
+                  name={character.name}
                   year={character.year}
                 />
               ))

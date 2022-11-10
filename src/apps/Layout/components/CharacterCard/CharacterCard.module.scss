@@ -1,12 +1,12 @@
 .root{
   width: 275px;
-  height: 369px;
+  height: 397px;
   border-radius: 0 15px 0 15px;
   background: linear-gradient(120deg, rgba(41, 23, 111, 1) 10%, rgba(37, 8, 65, 1) 50%, rgba(41, 23, 111, 1) 85%);
 
   @media (max-width: 450px) {
     width: 186px;
-    height: 249px;
+    height: 270px;
   }
 
   @media (max-width: 400px) {
@@ -46,11 +46,43 @@
       display: flex;
       flex-direction: column;
       color: white;
-      gap: 15px;
+      gap: 20px;
 
       @media (max-width: 450px) {
         gap: 10px;
       }
+
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+
+        @media (max-width: 450px) {
+          gap: 20px;
+        }
+
+        .key {
+          font-size: 15px;
+          font-weight: 500;
+
+          @media (max-width: 450px) {
+            font-size: 10px;
+          }
+        }
+
+        .value {
+          font-family: "Montserrat";
+          font-size: 15px;
+          white-space: nowrap;
+
+          @media (max-width: 450px) {
+            font-size: 10px;
+            white-space: nowrap;
+          }
+        }
+      }
+
 
       .location {
         display: flex;
@@ -72,9 +104,9 @@
         }
 
         .value {
-          font-family: Doko;
+          font-family: "Montserrat";
           font-size: 15px;
-          text-transform: uppercase;
+          white-space: nowrap;
 
           @media (max-width: 450px) {
             font-size: 10px;
@@ -92,9 +124,11 @@
         .key {
           font-size: 15px;
           font-weight: 500;
+          line-height: 18.29px;
 
           @media (max-width: 450px) {
             font-size: 10px;
+            line-height: 12px;
           }
         }
 
@@ -102,9 +136,11 @@
           font-size: 30px;
           font-family: 'Just Me Again Down Here', cursive;
           letter-spacing: 4px;
+          line-height: 18.29px;
 
           @media (max-width: 450px) {
             font-size: 15px;
+            line-height: 12px;
           }
         }
       }

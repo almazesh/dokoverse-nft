@@ -25,7 +25,7 @@ const LanguageDropdown = (
               {
                 item?.icon
                   ? <item.icon/>
-                  : <span>{item.title}</span>
+                  : <span>{item.title_laptop}</span>
               }
             </li>
           ))

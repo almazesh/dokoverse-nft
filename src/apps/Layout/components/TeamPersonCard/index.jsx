@@ -6,7 +6,8 @@ const TeamPersonCard = (
   {
     profileImg,
     nickname,
-    about
+    about,
+    position
   }
 ) => {
   return (
@@ -17,7 +18,7 @@ const TeamPersonCard = (
         </div>
         <div className={cls.about}>
           <span className={cls.nickname}>{nickname}</span>
-          <span className={cls.teamName}>doko</span>
+          <span className={cls.teamName}>{position}</span>
           <p>{about}</p>
         </div>
       </div>

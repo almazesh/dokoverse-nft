@@ -23,6 +23,7 @@ const Team = () => {
                     profileImg={person.profileImg}
                     about={person.about}
                     nickname={person.nickname}
+                    position={person.position}
                   />
                 ))
               }
