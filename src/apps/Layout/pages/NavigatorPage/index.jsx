@@ -39,11 +39,6 @@ const NavigatorPage = () => {
   const [isActiveTabSelect, setIsActiveTabSelect] = useState(false);
   const componentObj = navigations[activeComponentIdx]
 
-  const onChangeValueSelect = (e) => {
-    setActiveComponentIdx(e.target.options.selectedIndex)
-  }
-
-
   return (
     <>
       <div className={cls.root}>
@@ -78,6 +73,9 @@ const NavigatorPage = () => {
             }
           </div>
         </div>
+
+        
+        {/* Mobile */}
 
         <div className={cls.mobile}>
           <div className={cls.tabSelect}>
@@ -118,3 +116,4 @@ const NavigatorPage = () => {
 }
 
 export default NavigatorPage
+
