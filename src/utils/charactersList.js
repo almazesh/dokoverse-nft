@@ -75,3 +75,4 @@ export const charactersList = [
     image: characterImg10
   },
 ]
+

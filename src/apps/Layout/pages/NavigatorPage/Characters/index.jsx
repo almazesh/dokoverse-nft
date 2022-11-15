@@ -53,11 +53,6 @@ const Characters = () => {
             }
           </ul>
         </div>
-
-        <span className={cls.next}>
-          <span>NEXT</span>
-          <pre>-></pre>
-        </span>
       </div>
     </>
   )
