@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate, useParams} from "react-router"
 
-import { modalText, modalTitle } from '../../../../utils/modalTexts'
+import {modalText, modalTitle} from '../../../../utils/modalTexts'
 
 import cls from './RoadmapDetailed.module.scss'
 
@@ -20,7 +20,16 @@ const RoadmapDetailed = () => {
         >&times;</span>
           <div className={cls.modalWrapper}>
             <h3>{modalTitle[category]}</h3>
-            <p>{modalText[category]}</p>
+            <ul>
+              {
+                modalText[category].map(item => (
+                  <li key={item.id}>
+                    <h5><span>-</span>{item.title}</h5>
+                    {item.description && <p><span>&#9675;</span>{item.description}</p>}
+                  </li>
+                ))
+              }
+            </ul>
           </div>
         </div>
       </div>
