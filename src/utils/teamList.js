@@ -12,7 +12,7 @@ import teamProfileImg11 from "../assets/images/teamProfileImg11.png"
 import teamProfileImg12 from "../assets/images/teamProfileImg12.png"
 
 
-export const teamList =  [
+export const teamList = [
   {
     id: 0,
     nickname: '@doko',
@@ -21,12 +21,20 @@ export const teamList =  [
     profileImg: teamProfileImg8
   },
   {
-    id: 1,
-    nickname: '@james',
-    position: 'DESIGN TEAM LEAD ‘ITAEWON JESUS AND VISIONARY',
-    about: 'Artist',
-    profileImg: teamProfileImg6
+    id: 6,
+    nickname: '@kim yongji',
+    position: 'CO-FOUNDER AND CO-PROJECT LEADER - ‘THE GLUE\'',
+    about: 'Representative patent attorney @kim&co',
+    profileImg: teamProfileImg3
   },
+  {
+    id: 8,
+    nickname: '@joshua antony',
+    position: 'CO-FOUNDER AND CO-PROJECT LEADER - ‘THE MAGICIAN\'',
+    about: 'Chief of global bd @cloudy boss blockchain expert',
+    profileImg: teamProfileImg10
+  },
+
   {
     id: 2,
     nickname: '@laura valls alvares',
@@ -34,6 +42,7 @@ export const teamList =  [
     about: 'Co-founder @lv global head of strategy @crypto moon walkers marketing and nft expert',
     profileImg: teamProfileImg7
   },
+
   {
     id: 3,
     nickname: '@aaron cossrow',
@@ -42,59 +51,56 @@ export const teamList =  [
     profileImg: teamProfileImg5
   },
   {
-    id: 4,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg2
+    id: 1,
+    nickname: '@james',
+    position: 'DESIGN TEAM LEAD ‘ITAEWON JESUS AND VISIONARY',
+    about: 'Artist',
+    profileImg: teamProfileImg6
   },
+
+  {
+    id: 11,
+    nickname: '@jaelim',
+    position: 'BLOCKCHAIN AND SMART CONTRACTS',
+    about: 'PM@future sense',
+    profileImg: teamProfileImg1
+  },
+
+  {
+    id: 7,
+    nickname: '@steve',
+    position: 'KOREAN MARKETING MANAGER – ‘KOREAN STEVE JOBS’',
+    about: 'Nft consultant founder @fast nft',
+    profileImg: teamProfileImg9
+  },
+
+  {
+    id: 10,
+    nickname: '@han beyol',
+    position: 'CFO',
+    about: 'CFO@pig entertainment',
+    profileImg: teamProfileImg4
+  },
+
   {
     id: 5,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
+    nickname: '@vladi',
+    position: 'DESIGN AND WEBSITE',
+    about: 'CEO@habsida',
     profileImg: teamProfileImg12
   },
   {
-    id: 6,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg3
-  },
-  {
-    id: 7,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg9
-  },
-  {
-    id: 8,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg10
-  },
-  {
     id: 9,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
+    nickname: '@yana',
+    position: 'WEBSITE',
+    about: 'Program manager@habsida',
     profileImg: teamProfileImg11
   },
   {
-    id: 10,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg4
-  },
-  {
-    id: 11,
-    nickname: '@doko_twi',
-    position: 'doko',
-    about: 'Doko (도코; sometimes stylized in all caps) is a South Korean singer-songwriter under C9 Entertainment and PIG Entertainment.',
-    profileImg: teamProfileImg1
+    id: 4,
+    nickname: '@jojo',
+    position: 'COMIC ARTIST',
+    about: 'Illustrator@habsida',
+    profileImg: teamProfileImg2
   },
 ]
