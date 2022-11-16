@@ -30,10 +30,6 @@ const Team = () => {
             </ul>
           </div>
         </section>
-        <span className={cls.next}>
-          <span>NEXT</span>
-          <pre>-></pre>
-        </span>
       </div>
 
     </>
