@@ -2,7 +2,7 @@ import React from 'react'
 import TeamPersonCard from "../../../components/TeamPersonCard"
 
 import cls from './Team.module.scss'
-import teamBanner from '../../../../../assets/images/teamPeople.png'
+import teamBanner from '../../../../../assets/images/teamBg.png'
 import {teamList} from "../../../../../utils/teamList"
 
 

@@ -85,6 +85,7 @@
             font-size: 40px;
             font-weight: 400;
             line-height: 48px;
+            letter-spacing: 10px;
             text-transform: uppercase;
             font-family: Doko;
 
@@ -94,7 +95,7 @@
             }
 
             @media (max-width: 450px) {
-              width: 50%;
+              width: 100%;
               text-align: center;
               margin: 0 auto;
               word-wrap: break-word;
