@@ -49,7 +49,7 @@ const Dropdown = (
           <li
             className={`${isMercantileActive ? cls.mercantile : ''}`}
             onClick={() => setIsMercantileActive(prev => !prev)}
-          >{isMercantileActive ? 'Sequence Initializing...' : 'The Mercantile'}</li>
+          >{isMercantileActive ? 'Initializing...' : 'The Mercantile'}</li>
         </ul>
 
         <div className={cls.contacts}>

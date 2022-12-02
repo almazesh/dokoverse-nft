@@ -50,7 +50,7 @@ const Header = () => {
               <li
                 className={`${isMercantileActive ? cls.mercantile : ''}`}
                 onClick={() => setIsMercantileActive(prev => !prev)}
-              >{isMercantileActive ? 'Sequence Initializing...' : 'The Mercantile'}</li>
+              >{isMercantileActive ? 'Initializing...' : 'The Mercantile'}</li>
             </ul>
           </div>
           <div className={cls.contacts}>

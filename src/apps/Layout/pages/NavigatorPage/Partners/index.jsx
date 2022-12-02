@@ -9,8 +9,7 @@ const Partners = () => {
       <div className={cls.root}>
         <div className={cls.description}>
           <p>
-            Founded by a famous K Pop Producer, singer, and songwriter alongside a team of NFT, Blockchain, marketing,
-            artistic, community, and creative experts from over 7 countries and 10 nationalities.
+            Global Partners and Sponsors
           </p>
         </div>
         <div className={cls.partners}>

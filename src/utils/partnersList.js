@@ -12,6 +12,9 @@ import partnerLogo11 from "../assets/images/partnersLogo11.png"
 import partnerLogo12 from "../assets/images/partnersLogo12.png"
 import partnerLogo13 from "../assets/images/partnersLogo13.png"
 import partnerLogo14 from "../assets/images/partnersLogo14.png"
+import partnerLogo15 from "../assets/images/partnersLogo15.png"
+import partnerLogo16 from "../assets/images/partnersLogo16.png"
+import partnerLogo17 from "../assets/images/partnersLogo17.png"
 
 
 export const partnersList = [
@@ -70,5 +73,17 @@ export const partnersList = [
   {
     id: 13,
     image: partnerLogo14
+  },
+  {
+    id: 14,
+    image: partnerLogo15
+  },
+  {
+    id: 15,
+    image: partnerLogo16
+  },
+  {
+    id: 16,
+    image: partnerLogo17
   },
 ]
