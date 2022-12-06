@@ -168,12 +168,13 @@
       button {
         width: 100%;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 700;
         background: transparent;
         text-transform: uppercase;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         border: 1px solid #0009D9;
+        line-height: 25px;
         padding: 20px 0;
         border-radius: 34px;
         cursor: pointer;
@@ -182,11 +183,13 @@
           background: #0009D9;
           padding: 14px 0;
           font-size: 16px;
+          letter-spacing: 4px;
           width: 403px;
         }
 
         @media (max-width: 450px) {
           width: 300px;
+          font-size: 14px;
         }
 
         @media (max-width: 420px) {

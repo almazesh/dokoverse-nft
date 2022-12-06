@@ -60,8 +60,9 @@ const Main = () => {
                 <Logo/>
                 <button
                   onClick={() => setIsMinting(true)}
+                  disabled
                 >
-                  Minting
+                  Start minting on 12th December
                 </button>
               </div>
 

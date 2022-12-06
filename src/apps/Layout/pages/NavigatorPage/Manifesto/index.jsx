@@ -29,9 +29,9 @@ const Manifesto = () => {
               becoming more and more reliant upon technological means.
             </p>
             <p className={cls.thirdDescription}>
-              DOKOVERSE (in Anurati font) is enabling people to take control of time and energy, by allowing its members
+              DOKOVERSE is enabling people to take control of time and energy, by allowing its members
               to express sound and vibration as they wish, while being rewarded for such expressions. Through leveraging
-              the power of Korean culture, music, and social influence… DOKOVERSE (in Anurati font) is spreading such a
+              the power of Korean culture, music, and social influence… DOKOVERSE is spreading such a
               message to all citizens of Earth… the revolution is withinside of YOU, while societal adversity may be
               conquered, by one… and shared by all.
             </p>

@@ -8,7 +8,7 @@
   }
 
   .teamBanner {
-    margin: 0 auto 165px auto;
+    margin: 0 auto 50px auto;
     width: 95%;
     height: 735px;
 
@@ -35,6 +35,39 @@
   .teamList {
     width: 95%;
     margin: 0 auto;
+
+    .heading {
+      color: white;
+      text-align: center;
+      padding-bottom: 50px;
+
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 50px;
+
+        @media (max-width: 450px) {
+          font-size: 25px;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 24.94px;
+        font-weight: 500;
+        width: 80%;
+        margin: 0 auto;
+
+        @media (max-width: 769px) {
+          width: 100%;
+          font-size: 20px;
+        }
+
+        @media (max-width: 450px) {
+          font-size: 16px;
+        }
+      }
+    }
 
     .teamListContainer {
 
