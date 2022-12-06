@@ -14,6 +14,15 @@ const Team = () => {
           <img src={teamBanner} alt="team banner"/>
         </section>
         <section className={cls.teamList}>
+
+          <div className={cls.heading}>
+            <h2>DOKOVERSE CORE TEAM</h2>
+
+            <p>The DOKOVERSE team has over 20+ people, while the project is Founded by a famous K Pop Producer, singer,
+              and songwriter alongside a team of NFT, Blockchain, marketing, artistic, community, and creative experts
+              from over 7 countries and 10 nationalities.</p>
+          </div>
+
           <div className={cls.teamListContainer}>
             <ul className={cls.list}>
               {
