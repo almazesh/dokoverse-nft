@@ -8,22 +8,26 @@ export const SharingList = [
   {
     id: 0,
     icon: DiscordIcon,
-    title: 'discord'
+    title: 'discord',
+    link: 'https://discord.com/invite/F4nEKadXzB'
   },
   {
     id: 1,
     icon: TwitterIcon,
-    title: 'twitter'
+    title: 'twitter',
+    link: 'https://twitter.com/dokoverse'
   },
-  {
-    id: 2,
-    icon: OpenSeaIcon,
-    title: 'open sea'
-  },
+  // {
+  //   id: 2,
+  //   icon: OpenSeaIcon,
+  //   title: 'open sea',
+  //   link: ''
+  // },
   {
     id: 3,
     icon: YoutubeIcon,
-    title: 'youtube'
+    title: 'youtube',
+    link: 'https://www.youtube.com/@DOKOVERSE'
   },
 ]
 
