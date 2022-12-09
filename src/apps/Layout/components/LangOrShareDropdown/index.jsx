@@ -22,11 +22,13 @@ const LanguageDropdown = (
               key={item.id}
               onClick={() => setIsActive(false)}
             >
-              {
-                item?.icon
-                  ? <item.icon/>
-                  : <span>{item.title_laptop}</span>
-              }
+              <a href={item.link} target="_blank">
+                {
+                  item?.icon
+                    ? <item.icon/>
+                    : <span>{item.title_laptop}</span>
+                }
+              </a>
             </li>
           ))
         }

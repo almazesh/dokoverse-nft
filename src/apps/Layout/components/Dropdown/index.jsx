@@ -88,12 +88,14 @@ const Dropdown = (
                     key={item.id}
                     onClick={() => setIsActiveShare(prev => !prev)}
                   >
-                    {
-                      <item.icon/>
-                    }
-                    {
-                      item.title
-                    }
+                    <a href={item.link} target="_blank">
+                      {
+                        <item.icon/>
+                      }
+                      {
+                        item.title
+                      }
+                    </a>
                   </li>
                 ))
               }
@@ -101,8 +103,6 @@ const Dropdown = (
           </div>
         </div>
       </div>
-
-
     </div>
   )
 }
