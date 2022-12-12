@@ -13,6 +13,7 @@ import partnerLogo13 from "../assets/images/partnersLogo13.png"
 import partnerLogo14 from "../assets/images/partnersLogo14.png"
 import partnerLogo16 from "../assets/images/partnersLogo16.png"
 import partnerLogo17 from "../assets/images/partnersLogo17.png"
+import partnerLogo18 from "../assets/images/partnersLogo19.png"
 
 
 export const partnersList = [
@@ -75,5 +76,9 @@ export const partnersList = [
   {
     id: 16,
     image: partnerLogo17
+  },
+  {
+    id: 17,
+    image: partnerLogo18
   },
 ]
