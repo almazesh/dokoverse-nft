@@ -62,7 +62,7 @@ const Main = () => {
                   onClick={() => setIsMinting(true)}
                   disabled
                 >
-                  Start minting on 12th December
+                  Start minting on 19th December
                 </button>
               </div>
 
